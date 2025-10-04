@@ -2,7 +2,6 @@ plugins {
     id "java"
     id "application"
     id "pmd"
-    id "org.openjfx.javafxplugin" version "0.1.0"
 }
 
 repositories {
@@ -13,10 +12,11 @@ application {
     mainClass = "edu.curtin.saed.assignment2.App"
 }
 
-javafx {
-    version = "19.0.2.1"  // Last JavaFX version compatible with Java 11
-    modules = [ "javafx.controls" ]
+dependencies {
+    implementation 'com.1stleg:jnativehook:2.1.0'
+
 }
+
 
 pmd {
     consoleOutput = true
@@ -26,13 +26,6 @@ pmd {
     ruleSetFiles = files("saed-pmd-rules.xml")
 }
 
-tasks.withType(JavaCompile) {
-    options.compilerArgs << "-Xlint:all,-serial"
+run {
+    standardInput = System.in
 }
-
-// tasks.named("run") {
-//     environment["PATH"] = (
-//         layout.projectDirectory.dir("comms").dir("bin").toString()
-//         + File.pathSeparator
-//         + System.getenv("PATH"))
-// }
