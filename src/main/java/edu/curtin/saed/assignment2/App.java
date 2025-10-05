@@ -17,6 +17,8 @@ public class App implements NativeKeyListener
     private static final Logger logger = Logger.getLogger(App.class.getName());
 
     private static volatile boolean isRunning = true;
+    private static volatile boolean isKeyPressed = false;
+    private static Simulation sim;
 
     public static void main(String[] args)
     {
@@ -27,56 +29,52 @@ public class App implements NativeKeyListener
         logger.info("Starting Simulation");
         //clearScreen();
 
-        Simulation sim = new Simulation(12, 13);
+        sim = new Simulation(12, 13);
         sim.testMapGenerator();
 
+        redrawMap();
         while(isRunning)
-        {
-            System.out.println( sim.getDrawableMap());
-
-
-
-
-            try
-            {
-                Thread.sleep(3000);
-            } catch(InterruptedException e)
-            {
-                throw new RuntimeException(e);
-            }
-            //clearScreen();
-        }
+        {} // For now keeps the main app running
     }
+
+
+    private static void redrawMap()
+    {
+        clearScreen();
+        System.out.println(sim.getDrawableMap());
+    }
+
+
 
     public static void clearScreen() {
 
         for (int i = 0; i < 50; i++) {
             System.out.println();
         }
-        System.out.println("=== SCREEN CLEARED ==="); // Optional: show it worked
 
     }
 
     public void setupKeyListener() {
         // Disable JNativeHook logging
-        Logger logger = Logger.getLogger(GlobalScreen.class.getPackage().getName());
-        logger.setLevel(Level.OFF);
-        logger.setUseParentHandlers(false);
+        Logger l = Logger.getLogger(GlobalScreen.class.getPackage().getName());
+        l.setLevel(Level.OFF);
+        l.setUseParentHandlers(false);
 
         try {
             GlobalScreen.registerNativeHook();
             GlobalScreen.addNativeKeyListener(this);
-            System.out.println("Key listener registered successfully");
+            logger.info("Native hook registered successfully.");
         } catch (NativeHookException ex) {
-            System.err.println("Failed to register native hook: " + ex.getMessage());
-            System.exit(1);
+            logger.severe("Failed to register native hook: " + ex.getMessage());
+            System.out.println("Exiting...");
+            isRunning = false;
         }
     }
 
     @Override
     public void nativeKeyTyped(NativeKeyEvent nativeKeyEvent)
     {
-
+        // DO Nothing
     }
 
     @Override
@@ -86,6 +84,7 @@ public class App implements NativeKeyListener
             case NativeKeyEvent.VC_ESCAPE:
                 System.out.println("Exiting...");
                 isRunning = false;
+                isKeyPressed = true;
                 try {
                     GlobalScreen.unregisterNativeHook();
                 } catch (NativeHookException ex) {
@@ -93,8 +92,34 @@ public class App implements NativeKeyListener
                 }
                 break;
             case NativeKeyEvent.VC_SPACE:
-                System.out.println("Space bar pressed!");
+                isKeyPressed = true;
+                redrawMap();
                 break;
+
+            case NativeKeyEvent.VC_UP:
+                logger.info("Player moved up - clicked");
+                sim.movePlayer(0, -1);
+                redrawMap();
+                break;
+
+            case NativeKeyEvent.VC_DOWN:
+                logger.info("Player moved down - clicked");
+                sim.movePlayer(0, 1);
+                redrawMap();
+                break;
+
+            case NativeKeyEvent.VC_LEFT:
+                logger.info("Player moved left - clicked");
+                sim.movePlayer(-1, 0);
+                redrawMap();
+                break;
+
+            case NativeKeyEvent.VC_RIGHT:
+                logger.info("Player moved right - clicked");
+                sim.movePlayer(1, 0);
+                redrawMap();
+                break;
+
             case NativeKeyEvent.VC_ENTER:
                 System.out.println("Enter pressed!");
                 break;
@@ -104,6 +129,6 @@ public class App implements NativeKeyListener
     @Override
     public void nativeKeyReleased(NativeKeyEvent nativeKeyEvent)
     {
-
+        // Do Nothing
     }
 }

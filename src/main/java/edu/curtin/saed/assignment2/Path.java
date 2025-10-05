@@ -1,22 +1,15 @@
 package edu.curtin.saed.assignment2;
 
-public class Collectable implements MapObject
+
+public class Path implements MapObject
 {
-    private String name;
-    private int x;
-    private int y;
-    private String icon;
-    private boolean isPresent;
+    // Doesn't use a coordinate system - For the sake of simplicity
+
     private boolean isVisible;
 
-    public Collectable(String name, int x, int y, boolean isPresent, String icon)
+    public Path(boolean isVisible)
     {
-        this.name = name;
-        this.x = x;
-        this.y = y;
-        this.icon = icon;
-        this.isPresent = isPresent;
-        this.isVisible = false;
+        this.isVisible = isVisible;
     }
 
     @Override
@@ -34,37 +27,36 @@ public class Collectable implements MapObject
     @Override
     public boolean isPresentInGame()
     {
-        return isPresent;
+        return true;
     }
 
     @Override
     public void makeVisible()
     {
-       isVisible = true;
+        isVisible = true;
     }
 
     @Override
     public int getXPosition()
     {
-        return x;
+        return 0; // Fake position
     }
 
     @Override
     public int getYPosition()
     {
-        return y;
+        return 0; // Fake position
     }
 
     @Override
     public String getMapIcon()
     {
-        return icon;
+        return " ";
     }
 
     @Override
     public boolean performAction(Player player)
     {
-        // Do other stuff
         return true;
     }
 }

@@ -5,9 +5,11 @@ public interface MapObject
     boolean isSolid();
     boolean isVisible();
     boolean isPresentInGame();
+    void makeVisible();
 
     int getXPosition();
     int getYPosition();
+    String getMapIcon();
 
-    void performAction(Player player);
+    boolean performAction(Player player);
 }
