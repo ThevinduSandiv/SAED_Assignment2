@@ -16,7 +16,7 @@ public class App implements NativeKeyListener
 
     private static final Logger logger = Logger.getLogger(App.class.getName());
 
-    private static volatile boolean isRunning = false;
+    private static volatile boolean isRunning = true;
 
     public static void main(String[] args)
     {
@@ -24,26 +24,27 @@ public class App implements NativeKeyListener
         App app = new App();
         app.setupKeyListener();
 
-        logger.info("Starting...");
-        clearScreen();
+        logger.info("Starting Simulation");
+        //clearScreen();
 
-        Simulation sim = new Simulation();
+        Simulation sim = new Simulation(12, 13);
+        sim.testMapGenerator();
 
         while(isRunning)
         {
-
+            System.out.println( sim.getDrawableMap());
 
 
 
 
             try
             {
-                Thread.sleep(1000);
+                Thread.sleep(3000);
             } catch(InterruptedException e)
             {
                 throw new RuntimeException(e);
             }
-            clearScreen();
+            //clearScreen();
         }
     }
 
