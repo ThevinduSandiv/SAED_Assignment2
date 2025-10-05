@@ -5,26 +5,33 @@ import org.jnativehook.NativeHookException;
 import org.jnativehook.keyboard.NativeKeyEvent;
 import org.jnativehook.keyboard.NativeKeyListener;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.logging.Level;
+import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class App implements NativeKeyListener
 {
+
+    private static final Logger logger = Logger.getLogger(App.class.getName());
+
     private static volatile boolean isRunning = false;
 
     public static void main(String[] args)
     {
-
         // Setup the key listener first
         App app = new App();
         app.setupKeyListener();
 
-        System.out.println("Starting...");
+        logger.info("Starting...");
         clearScreen();
+
+        Simulation sim = new Simulation();
 
         while(isRunning)
         {
-            System.out.println("Hi");
+
 
 
 
@@ -47,22 +54,6 @@ public class App implements NativeKeyListener
         }
         System.out.println("=== SCREEN CLEARED ==="); // Optional: show it worked
 
-
-
-//        try {
-//            String os = System.getProperty("os.name").toLowerCase();
-//            if (os.contains("win")) {
-//                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-//            } else {
-//                System.out.print("\033[H\033[2J");
-//                System.out.flush();
-//            }
-//        } catch (Exception e) {
-//            System.err.println("Warning: Could not clear screen: " + e.getMessage());
-//            for (int i = 0; i < 50; i++) {
-//                System.out.println();
-//            }
-//        }
     }
 
     public void setupKeyListener() {

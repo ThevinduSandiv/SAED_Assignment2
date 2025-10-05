@@ -10,6 +10,10 @@ repositories {
 
 application {
     mainClass = "edu.curtin.saed.assignment2.App"
+
+    applicationDefaultJvmArgs = [
+            "-Djava.util.logging.config.file=${projectDir}/src/main/resources/logging.properties"
+    ]
 }
 
 dependencies {

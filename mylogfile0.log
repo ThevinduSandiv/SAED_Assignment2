@@ -1,0 +1,6 @@
+Oct 05, 2025 8:40:24 AM edu.curtin.saed.assignment2.App main
+INFO: Starting...
+Oct 05, 2025 8:40:24 AM edu.curtin.saed.assignment2.Simulation <init>
+INFO: Simulation started...
+Oct 05, 2025 8:40:24 AM edu.curtin.saed.assignment2.Simulation <init>
+SEVERE: This is a severe log message
