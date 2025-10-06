@@ -6,6 +6,8 @@ public class Simulation
 {
     private static final Logger logger = Logger.getLogger(Simulation.class.getName());
 
+    private final boolean CHEAT = false;
+
     private int gridH;
     private int gridW;
 
@@ -57,7 +59,14 @@ public class Simulation
                     }
                     else
                     {
-                        sb.append("~");
+                        if(CHEAT)
+                        {
+                            sb.append(obj.getMapIcon());
+                        }
+                        else
+                        {
+                            sb.append("~");
+                        }
                     }
                 }
                 sb.append(" ");

@@ -1,0 +1,27 @@
+PARSER_BEGIN(MyParser)
+package edu.curtin.saed.assignment2;
+public class MyParser
+{
+}
+PARSER_END(MyParser)
+
+SKIP: { " " | "\n" | "\r" | "\t" }
+
+TOKEN: {
+    < OBSTACLE: "obstacle" >
+    | < COLLECTABLE: "item" >
+    | < AT: "at" >
+    | < SIZE: "size" >
+    | < REQUIRES: "requires" >
+    | < STRING: "\"" (~["\"", "\n", "\r"])* "\"" > // Any charcter except newlines surrounded by '"'
+    | < COORDINATE: "(" (["0"-"9"])+ "," (["0"-"9"])+ ")" >
+
+}
+
+void readObstacles() :
+{
+}
+{
+
+}
+
