@@ -1,7 +1,17 @@
 PARSER_BEGIN(MyParser)
 package edu.curtin.saed.assignment2;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MyParser
 {
+    Simulation sim;
+
+    public MyParser(Simulation sim, System in)
+    {
+        this.sim = sim;
+    }
 }
 PARSER_END(MyParser)
 
@@ -13,9 +23,18 @@ TOKEN: {
     | < AT: "at" >
     | < SIZE: "size" >
     | < REQUIRES: "requires" >
-    | < STRING: "\"" (~["\"", "\n", "\r"])* "\"" > // Any charcter except newlines and '\' surrounded by '"'
+    | < STRING: "\"" (~["\"", "\n", "\r"])* "\"" > // Any charcter except newlines surrounded by '"'
     | < COORDINATE: "(" (["0"-"9"])+ "," (["0"-"9"])+ ")" >
 
+     // catch all unknown token TODO: Maybe remove later
+    | < UNKNOWN_TOKEN: (~["\n", "\r", "\\", ",", "{", "}"])+ >
+
+}
+
+void run() :
+{}
+{
+    readObstacles()
 }
 
 void readObstacles() :
@@ -60,5 +79,22 @@ void readObstacles() :
                     }
                 )*
                 "}"
+        {
+         // Create Obstacle objects
+         List<Obstacle> createdObstacles = new ArrayList<>();
+        for(int[] coord : coordinates)
+        {
+            Obstacle obs = new Obstacle(coord[0], coord[1], "#", false);
+
+            // Add all required items
+            for(String r : requirements)
+            {
+                obs.addRequiredItem(r);
+            }
+
+            createdObstacles.add(obs);
+        }
+        sim.addObstacles(createdObstacles);
+        }
     )+
 }

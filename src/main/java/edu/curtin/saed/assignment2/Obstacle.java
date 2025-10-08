@@ -12,22 +12,22 @@ public class Obstacle implements MapObject
     private boolean isPresent;
     private boolean isVisible;
 
-    private List<Collectable> requiredItems;
+    private List<String> requiredItems;
 
-    public Obstacle(int x, int y, String icon, boolean isVisble)
+    public Obstacle(int x, int y, String icon, boolean isVisible)
     {
         this.x = x;
         this.y = y;
         this.icon = icon;
-        this.isVisible = isVisble;
+        this.isVisible = isVisible;
 
         this.isPresent = true;
         this.requiredItems = new ArrayList<>();
     }
 
-    public void addRequiredItem(Collectable item)
+    public void addRequiredItem(String itemName)
     {
-        requiredItems.add(item);
+        requiredItems.add(itemName);
     }
 
     @Override

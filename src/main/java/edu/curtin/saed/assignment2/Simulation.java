@@ -1,5 +1,7 @@
 package edu.curtin.saed.assignment2;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Logger;
 
 public class Simulation
@@ -7,6 +9,7 @@ public class Simulation
     private static final Logger logger = Logger.getLogger(Simulation.class.getName());
 
     private final boolean CHEAT = false;
+    private final int offset = 1;
 
     private int gridH;
     private int gridW;
@@ -27,6 +30,20 @@ public class Simulation
         goalPos = new int[2];
         goalPos[0] = 0;
         goalPos[1] = 0;
+    }
+
+    public void addObstacles(List<Obstacle> obstacleList)
+    {
+        for (Obstacle o : obstacleList)
+        {
+            int x = o.getXPosition() + offset;
+            int y = o.getYPosition() + offset;
+
+            if (y >= 0 && y < gridH + 2 && x >= 0 && x < gridW + 2)
+            {
+                map[y][x] = o;
+            }
+        }
     }
 
     private void initializeMapWithPaths()
@@ -169,40 +186,39 @@ public class Simulation
 
 
 
-    // TODO: Remove Later
+    // TODO: Remove/Update Later
     public void testMapGenerator()
     {
         int offset = 1; // for border walls
 
         // --- Collectables ---
-        Collectable[] collectables = {
-                new Collectable("superlative turquoise map", 3, 0, true, "I"),
-                new Collectable("glowing grey book", 11, 1, true, "I"),
-                new Collectable("ornate grey pendant", 8, 12, true, "I"),
-                new Collectable("ornate grey pendant", 7, 11, true, "I"),
-                new Collectable("ornate grey pendant", 7, 1, true, "I"),
-                new Collectable("ornate grey pendant", 1, 1, true, "I"),
-                new Collectable("lustrous yellow flask", 3, 5, true, "I"),
-                new Collectable("lustrous yellow flask", 7, 10, true, "I"),
-                new Collectable("lustrous yellow flask", 1, 5, true, "I"),
-                new Collectable("lustrous yellow flask", 5, 12, true, "I"),
-                new Collectable("ornate pendant", 8, 0, true, "I"),
-                new Collectable("ornate pendant", 11, 3, true, "I"),
-                new Collectable("lustrous map", 7, 9, true, "I"),
-                new Collectable("lustrous map", 1, 12, true, "I"),
-                new Collectable("lustrous map", 11, 7, true, "I"),
-                new Collectable("lustrous map", 9, 7, true, "I"),
-                new Collectable("worn crown", 2, 2, true, "I"),
-                new Collectable("worn crown", 4, 4, true, "I"),
-                new Collectable("worn crown", 4, 9, true, "I"),
-                new Collectable("worn crown", 4, 0, true, "I"),
-                new Collectable("antique red case", 9, 2, true, "I"),
-                new Collectable("antique red case", 8, 3, true, "I"),
-                new Collectable("antique red case", 0, 2, true, "I"),
-                new Collectable("antique red case", 5, 10, true, "I"),
-                new Collectable("antique red case", 9, 0, true, "I"),
-                new Collectable("charmed gem", 2, 9, true, "I")
-        };
+        List<Collectable> collectables = new ArrayList<>();
+        collectables.add(new Collectable("superlative turquoise map", 3, 0, "A map glowing with turquoise brilliance", true, "I"));
+        collectables.add(new Collectable("glowing grey book", 11, 1, "An ancient book emitting a faint grey glow", true, "I"));
+        collectables.add(new Collectable("ornate grey pendant", 8, 12, "A finely crafted grey pendant with intricate designs", true, "I"));
+        collectables.add(new Collectable("ornate grey pendant", 7, 11, "A finely crafted grey pendant with intricate designs", true, "I"));
+        collectables.add(new Collectable("ornate grey pendant", 7, 1, "A finely crafted grey pendant with intricate designs", true, "I"));
+        collectables.add(new Collectable("ornate grey pendant", 1, 1, "A finely crafted grey pendant with intricate designs", true, "I"));
+        collectables.add(new Collectable("lustrous yellow flask", 3, 5, "A small flask shining with yellow luster", true, "I"));
+        collectables.add(new Collectable("lustrous yellow flask", 7, 10, "A small flask shining with yellow luster", true, "I"));
+        collectables.add(new Collectable("lustrous yellow flask", 1, 5, "A small flask shining with yellow luster", true, "I"));
+        collectables.add(new Collectable("lustrous yellow flask", 5, 12, "A small flask shining with yellow luster", true, "I"));
+        collectables.add(new Collectable("ornate pendant", 8, 0, "A beautiful ornate pendant of unknown origin", true, "I"));
+        collectables.add(new Collectable("ornate pendant", 11, 3, "A beautiful ornate pendant of unknown origin", true, "I"));
+        collectables.add(new Collectable("lustrous map", 7, 9, "A map with a mysterious lustrous sheen", true, "I"));
+        collectables.add(new Collectable("lustrous map", 1, 12, "A map with a mysterious lustrous sheen", true, "I"));
+        collectables.add(new Collectable("lustrous map", 11, 7, "A map with a mysterious lustrous sheen", true, "I"));
+        collectables.add(new Collectable("lustrous map", 9, 7, "A map with a mysterious lustrous sheen", true, "I"));
+        collectables.add(new Collectable("worn crown", 2, 2, "An old crown showing signs of wear", true, "I"));
+        collectables.add(new Collectable("worn crown", 4, 4, "An old crown showing signs of wear", true, "I"));
+        collectables.add(new Collectable("worn crown", 4, 9, "An old crown showing signs of wear", true, "I"));
+        collectables.add(new Collectable("worn crown", 4, 0, "An old crown showing signs of wear", true, "I"));
+        collectables.add(new Collectable("antique red case", 9, 2, "A red case with antique charm", true, "I"));
+        collectables.add(new Collectable("antique red case", 8, 3, "A red case with antique charm", true, "I"));
+        collectables.add(new Collectable("antique red case", 0, 2, "A red case with antique charm", true, "I"));
+        collectables.add(new Collectable("antique red case", 5, 10, "A red case with antique charm", true, "I"));
+        collectables.add(new Collectable("antique red case", 9, 0, "A red case with antique charm", true, "I"));
+        collectables.add(new Collectable("charmed gem", 2, 9, "A small gem radiating magical charm", true, "I"));
 
         for (Collectable c : collectables)
         {
@@ -216,24 +232,29 @@ public class Simulation
         }
 
         // --- Obstacles ---
-        Obstacle[] obstacles = {
-                new Obstacle(6,8,"#", false), new Obstacle(7,2,"#", false), new Obstacle(0,3,"#", false),
-                new Obstacle(11,12,"#", false), new Obstacle(11,0,"#", false), new Obstacle(10,9,"#", false),
-                new Obstacle(0,5,"#", false), new Obstacle(9,3,"#", false), new Obstacle(0,8,"#", false)
-        };
+        List<Obstacle> obstacles = new ArrayList<>();
+        obstacles.add(new Obstacle(6,8,"#", false));
+        obstacles.add(new Obstacle(7,2,"#", false));
+        obstacles.add(new Obstacle(0,3,"#", false));
+        obstacles.add(new Obstacle(11,12,"#", false));
+        obstacles.add(new Obstacle(11,0,"#", false));
+        obstacles.add(new Obstacle(10,9,"#", false));
+        obstacles.add(new Obstacle(0,5,"#", false));
+        obstacles.add(new Obstacle(9,3,"#", false));
+        obstacles.add(new Obstacle(0,8,"#", false));
 
         // Add requirements
-        Collectable superTurquoiseMap = collectables[0];
-        Collectable ornatePendant1 = collectables[10];
-        Collectable lustrousMap1 = collectables[12];
-        Collectable charmedGem = collectables[25];
+        Collectable superTurquoiseMap = collectables.get(0);
+        Collectable ornatePendant1 = collectables.get(10);
+        Collectable lustrousMap1 = collectables.get(12);
+        Collectable charmedGem = collectables.get(25);
 
         for (Obstacle o : obstacles)
         {
-            o.addRequiredItem(superTurquoiseMap);
-            o.addRequiredItem(ornatePendant1);
-            o.addRequiredItem(lustrousMap1);
-            o.addRequiredItem(charmedGem);
+            o.addRequiredItem(superTurquoiseMap.getName());
+            o.addRequiredItem(ornatePendant1.getName());
+            o.addRequiredItem(lustrousMap1.getName());
+            o.addRequiredItem(charmedGem.getName());
 
             int x = o.getXPosition() + offset;
             int y = o.getYPosition() + offset;
@@ -264,6 +285,7 @@ public class Simulation
 
         logger.info("Test Map generated successfully!");
     }
+
 
 
 

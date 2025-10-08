@@ -7,6 +7,8 @@ import org.jnativehook.keyboard.NativeKeyListener;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.text.ParseException;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
@@ -22,6 +24,18 @@ public class App implements NativeKeyListener
 
     public static void main(String[] args)
     {
+
+        InputStream in = System.in;
+        if (args.length > 0) {
+            try {
+                in = new FileInputStream(args[0]);
+            } catch (Exception e) {
+                logger.warning("Cannot open file: " + args[0]);
+                return;
+            }
+        }
+        readFile(sim, );
+
         // Setup the key listener first
         App app = new App();
         app.setupKeyListener();
@@ -30,11 +44,28 @@ public class App implements NativeKeyListener
         //clearScreen();
 
         sim = new Simulation(12, 13);
+
         sim.testMapGenerator();
 
         redrawMap();
         while(isRunning)
         {} // For now keeps the main app running
+    }
+
+    private static void readFile(Simulation sim, InputStream in)
+    {
+        MyParser parser = new MyParser(sim, in);
+
+        try
+        {
+            parser.run();
+            logger.info("Input valid");
+        }
+        catch(ParseException e)
+        {
+           logger.severe("Parsing error!");
+            logger.info(e.getMessage());
+        }
     }
 
 

@@ -5,18 +5,30 @@ public class Collectable implements MapObject
     private String name;
     private int x;
     private int y;
+    private String msg;
     private String icon;
     private boolean isPresent;
     private boolean isVisible;
 
-    public Collectable(String name, int x, int y, boolean isPresent, String icon)
+    public Collectable(String name, int x, int y, String msg, boolean isPresent, String icon)
     {
         this.name = name;
         this.x = x;
         this.y = y;
+        this.msg = msg;
         this.icon = icon;
         this.isPresent = isPresent;
         this.isVisible = false;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public String getMsg()
+    {
+        return msg;
     }
 
     @Override
