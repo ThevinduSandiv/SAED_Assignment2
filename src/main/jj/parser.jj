@@ -6,12 +6,6 @@ import java.util.List;
 
 public class MyParser
 {
-    Simulation sim;
-
-    public MyParser(Simulation sim, System in)
-    {
-        this.sim = sim;
-    }
 }
 PARSER_END(MyParser)
 
@@ -26,18 +20,15 @@ TOKEN: {
     | < STRING: "\"" (~["\"", "\n", "\r"])* "\"" > // Any charcter except newlines surrounded by '"'
     | < COORDINATE: "(" (["0"-"9"])+ "," (["0"-"9"])+ ")" >
 
-     // catch all unknown token TODO: Maybe remove later
-    | < UNKNOWN_TOKEN: (~["\n", "\r", "\\", ",", "{", "}"])+ >
-
 }
 
-void run() :
+void run(Simulation sim) :
 {}
 {
-    readObstacles()
+    readObstacles(sim)
 }
 
-void readObstacles() :
+void readObstacles(Simulation sim) :
 {}
 {
     (
@@ -45,43 +36,43 @@ void readObstacles() :
         "{"
         {
             // New Lists to store the coordinates and requirements
-            List<int[]> coordinates = new ArrayList<>();
-            List<String> requirements = new ArrayList<>();
+            List<int[]> coordinates = new ArrayList<int[]>();
+            List<String> requirements = new ArrayList<String>();
         }
         <AT>
             <COORDINATE>
             {
                 // Parse first coordinate token and add to the list
-                String[] xy = token.image.replaceAll("[()]", "").split(",");
-                coordinates.add(new int[]{ Integer.parseInt(xy[0]), Integer.parseInt(xy[1]) });
+                String[] xy1 = token.image.replaceAll("[()]", "").split(",");
+                coordinates.add(new int[]{ Integer.parseInt(xy1[0]), Integer.parseInt(xy1[1]) });
             }
         (
             "," <COORDINATE>
             {
                 // Parse additional coordinates and add to the list
-                String[] xy = token.image.replaceAll("[()]", "").split(",");
-                coordinates.add(new int[]{ Integer.parseInt(xy[0]), Integer.parseInt(xy[1]) });
+                String[] xy2 = token.image.replaceAll("[()]", "").split(",");
+                coordinates.add(new int[]{ Integer.parseInt(xy2[0]), Integer.parseInt(xy2[1]) });
             }
         )*
         <REQUIRES>
                 <STRING>
                 {
                     // Add first requirement string (remove quotes)
-                    String req = token.image.replaceAll("\"", "");
-                    requirements.add(req);
+                    String req1 = token.image.replaceAll("\"", "");
+                    requirements.add(req1);
                 }
                 (
                     "," <STRING>
                     {
                         // Add additional requirement strings (remove quotes)
-                        String req = token.image.replaceAll("\"", "");
-                        requirements.add(req);
+                        String req2 = token.image.replaceAll("\"", "");
+                        requirements.add(req2);
                     }
                 )*
                 "}"
         {
          // Create Obstacle objects
-         List<Obstacle> createdObstacles = new ArrayList<>();
+         List<Obstacle> createdObstacles = new ArrayList<Obstacle>();
         for(int[] coord : coordinates)
         {
             Obstacle obs = new Obstacle(coord[0], coord[1], "#", false);

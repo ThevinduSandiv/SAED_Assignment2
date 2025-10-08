@@ -15,7 +15,6 @@ import java.util.logging.Logger;
 
 public class App implements NativeKeyListener
 {
-
     private static final Logger logger = Logger.getLogger(App.class.getName());
 
     private static volatile boolean isRunning = true;
@@ -34,7 +33,6 @@ public class App implements NativeKeyListener
                 return;
             }
         }
-        readFile(sim, );
 
         // Setup the key listener first
         App app = new App();
@@ -45,7 +43,10 @@ public class App implements NativeKeyListener
 
         sim = new Simulation(12, 13);
 
-        sim.testMapGenerator();
+        readFile(sim, in);
+
+        //sim.testMapGenerator();
+        sim.addWalls();
 
         redrawMap();
         while(isRunning)
@@ -54,14 +55,14 @@ public class App implements NativeKeyListener
 
     private static void readFile(Simulation sim, InputStream in)
     {
-        MyParser parser = new MyParser(sim, in);
+        MyParser parser = new MyParser(in);
 
         try
         {
-            parser.run();
+            parser.run(sim);
             logger.info("Input valid");
         }
-        catch(ParseException e)
+        catch(edu.curtin.saed.assignment2.ParseException e)
         {
            logger.severe("Parsing error!");
             logger.info(e.getMessage());

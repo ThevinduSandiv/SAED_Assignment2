@@ -8,7 +8,7 @@ public class Simulation
 {
     private static final Logger logger = Logger.getLogger(Simulation.class.getName());
 
-    private final boolean CHEAT = false;
+    private final boolean CHEAT = true;
     private final int offset = 1;
 
     private int gridH;
@@ -44,6 +44,26 @@ public class Simulation
                 map[y][x] = o;
             }
         }
+    }
+
+    public void addWalls()
+    {
+        for (int x = -1; x <= gridW; x++)
+        {
+            map[0][x + offset] = new Obstacle(x, -1,"#", true);      // top
+            map[gridH + 1][x + offset] = new Obstacle(x, gridH,"#", true); // bottom
+        }
+
+        for (int y = 0; y < gridH; y++)
+        {
+            map[y + offset][0] = new Obstacle(-1, y,"#", true);      // left
+            map[y + offset][gridW + 1] = new Obstacle(gridW, y,"#", true); // right
+        }
+
+        // Adding Player
+        int x = player.getXPosition() + offset;
+        int y = player.getYPosition() + offset;
+        map[y][x] = player;
     }
 
     private void initializeMapWithPaths()
