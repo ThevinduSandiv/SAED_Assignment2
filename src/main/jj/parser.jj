@@ -13,15 +13,52 @@ TOKEN: {
     | < AT: "at" >
     | < SIZE: "size" >
     | < REQUIRES: "requires" >
-    | < STRING: "\"" (~["\"", "\n", "\r"])* "\"" > // Any charcter except newlines surrounded by '"'
+    | < STRING: "\"" (~["\"", "\n", "\r"])* "\"" > // Any charcter except newlines and '\' surrounded by '"'
     | < COORDINATE: "(" (["0"-"9"])+ "," (["0"-"9"])+ ")" >
 
 }
 
 void readObstacles() :
+{}
 {
+    (
+        <OBSTACLE>
+        "{"
+        {
+            // New Lists to store the coordinates and requirements
+            List<int[]> coordinates = new ArrayList<>();
+            List<String> requirements = new ArrayList<>();
+        }
+        <AT>
+            <COORDINATE>
+            {
+                // Parse first coordinate token and add to the list
+                String[] xy = token.image.replaceAll("[()]", "").split(",");
+                coordinates.add(new int[]{ Integer.parseInt(xy[0]), Integer.parseInt(xy[1]) });
+            }
+        (
+            "," <COORDINATE>
+            {
+                // Parse additional coordinates and add to the list
+                String[] xy = token.image.replaceAll("[()]", "").split(",");
+                coordinates.add(new int[]{ Integer.parseInt(xy[0]), Integer.parseInt(xy[1]) });
+            }
+        )*
+        <REQUIRES>
+                <STRING>
+                {
+                    // Add first requirement string (remove quotes)
+                    String req = token.image.replaceAll("\"", "");
+                    requirements.add(req);
+                }
+                (
+                    "," <STRING>
+                    {
+                        // Add additional requirement strings (remove quotes)
+                        String req = token.image.replaceAll("\"", "");
+                        requirements.add(req);
+                    }
+                )*
+                "}"
+    )+
 }
-{
-
-}
-
