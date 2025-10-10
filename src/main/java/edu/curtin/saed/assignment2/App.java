@@ -74,6 +74,7 @@ public class App implements NativeKeyListener
     {
         clearScreen();
         System.out.println(sim.getDrawableMap());
+        System.out.println(sim.getMessagesToShow());
     }
 
 

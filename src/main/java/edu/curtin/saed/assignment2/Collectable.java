@@ -76,7 +76,9 @@ public class Collectable implements MapObject
     @Override
     public boolean performAction(Player player, Simulation sim)
     {
-        // Do other stuff
+        player.getInventory().add(this);
+        sim.addMsgToShow("You collected a " + name + "!");
+        sim.addMsgToShow(msg);
         return true;
     }
 }

@@ -1,28 +1,2018 @@
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.App setupKeyListener
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.App setupKeyListener
 INFO: Native hook registered successfully.
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.App main
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.App main
 INFO: Starting Simulation
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.App readFile
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.App readFile
 INFO: Input valid
-Oct 10, 2025 4:16:49 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
 INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:27 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:30 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:30 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:1
+Oct 10, 2025 4:53:30 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:1
+Oct 10, 2025 4:53:30 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:30 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:30 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:1
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:31 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:1
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:1
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:1
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:1
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:1
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:2
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:32 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:34 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:34 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:1
+Oct 10, 2025 4:53:34 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:1
+Oct 10, 2025 4:53:34 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:34 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:34 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:1
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:1
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:1
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:1
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:1
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:1
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:1
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:1
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:35 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:1
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:1
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:1
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:2
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:36 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:1
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:1
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:1
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:1
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:1
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:1
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:1
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:1
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:1
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:1
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:37 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:1
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:1
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:1
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:2
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:38 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:2
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:3
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:3
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:3
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:40 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:3
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:2
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:2
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:2
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:2
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:2
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:2
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:2
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:2
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:2
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:42 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:44 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:44 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:2
+Oct 10, 2025 4:53:44 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:2
+Oct 10, 2025 4:53:44 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:44 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:44 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:2
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:3
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:3
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:3
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:46 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:3
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:4
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:4
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:5
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:5
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:5
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:5
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:5
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:48 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:5
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:6
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:6
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:7
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:7
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:7
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:49 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:7
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:8
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:8
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:8
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:8
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:8
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:51 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:8
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:8
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:8
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:8
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:52 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:8
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:9
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:9
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:10
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:10
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:10
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:10
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:10
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:53 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:10
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:9
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:9
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:8
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:8
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:7
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:7
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:7
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:54 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:7
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:7
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:7
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:8
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:55 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:8
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:9
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:9
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:10
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:10
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:10
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:10
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:11
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:56 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:11
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:11
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:11
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:12
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:12
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:12
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:12
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:12
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:57 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:12
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:11
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:11
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:11
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:58 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:11
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:12
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:12
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:12
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:53:59 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:1, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:0, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:0, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:0, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:12
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:1, y:11
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:00 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:11
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:1, y:10
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:10
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:1, y:9
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:01 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:10
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:10
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:10
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:10
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:10
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:10
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:02 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:10
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:10
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:10
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:10
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:03 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:10
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:1, y:11
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:11
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:11
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:04 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:11
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:10
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:05 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:10
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:9
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:9
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:8
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:06 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:09 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:09 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:8
+Oct 10, 2025 4:54:09 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:8
+Oct 10, 2025 4:54:09 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:09 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:09 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:09 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:09 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:8
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:9
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:9
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:9
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:10 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:9
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:9
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:9
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:10
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:12 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:13 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:13 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:10
+Oct 10, 2025 4:54:13 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:11
+Oct 10, 2025 4:54:13 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:13 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:13 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:10
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:10
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:10
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:9
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:9
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:8
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:8
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:8
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:8
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:8
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:15 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:16 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:16 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:8
+Oct 10, 2025 4:54:16 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:7
+Oct 10, 2025 4:54:16 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:16 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:16 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:8
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:8
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:8
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:8
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:17 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:8
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:8
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:8
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:8
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:8
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:7
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:7
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:6
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:18 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:6
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:5
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:5
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:4
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:4
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:10, y:4
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:4
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:10, y:4
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:19 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:4
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:3
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:3
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:9, y:2
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:9, y:2
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:8, y:2
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:8, y:2
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:2
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:20 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:2
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:3
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:3
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:4
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:4
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:4
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:4
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:4
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:21 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:4
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:4
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:4
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:7, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:7, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:1, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:0, y:3
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:22 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:3
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:1, y:4
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:4
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:1, y:5
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:5
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:5
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:5
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:5
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:23 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:5
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:6
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:6
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:6
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:24 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:6
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:6
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:6
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:7
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:7
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:7
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:7
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:1, y:7
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:25 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:7
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:1, y:8
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:8
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:1, y:9
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:1, y:8
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:8
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:26 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:8
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:9
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:9
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:10
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:9
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:2, y:10
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:2, y:9
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:3, y:9
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:3, y:9
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:9
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:27 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:9
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:9
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:9
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:9
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:1 ,y:0
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:9
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:8
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:8
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:7
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:7
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:6, y:6
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:-1
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:6, y:6
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:6
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:5, y:6
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:6
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:-1 ,y:0
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:28 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:6
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:4, y:7
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> x:0 ,y:1
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:7
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:7
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at x:4, y:7
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at x:5, y:7
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 10, 2025 4:54:29 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.

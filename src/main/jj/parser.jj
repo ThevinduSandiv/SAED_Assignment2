@@ -76,7 +76,7 @@ void readObstacles(Simulation sim) :
          List<Obstacle> createdObstacles = new ArrayList<Obstacle>();
         for(int[] coord : coordinates)
         {
-            Obstacle obs = new Obstacle(coord[0], coord[1], "#", false);
+            Obstacle obs = new Obstacle(coord[0], coord[1], "#", false, false);
 
             // Add all required items
             for(String r : requirements)

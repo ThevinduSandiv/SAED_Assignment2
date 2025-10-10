@@ -1,6 +1,7 @@
 package edu.curtin.saed.assignment2;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -16,6 +17,8 @@ public class Simulation
 
     private MapObject[][] map;
     private Player player;
+
+    private List<String> messages;
     private int[] goalPos;
 
     public Simulation(int gridH, int gridW)
@@ -27,6 +30,7 @@ public class Simulation
         initializeMapWithPaths();
 
         this.player = new Player(0, 0);
+        this.messages = new LinkedList<>();
         goalPos = new int[2];
         goalPos[0] = 0;
         goalPos[1] = 0;
@@ -66,14 +70,14 @@ public class Simulation
     {
         for (int x = -1; x <= gridW; x++)
         {
-            map[0][x + offset] = new Obstacle(x, -1,"#", true);      // top
-            map[gridH + 1][x + offset] = new Obstacle(x, gridH,"#", true); // bottom
+            map[0][x + offset] = new Obstacle(x, -1,"#", true, true);      // top
+            map[gridH + 1][x + offset] = new Obstacle(x, gridH,"#", true, true); // bottom
         }
 
         for (int y = 0; y < gridH; y++)
         {
-            map[y + offset][0] = new Obstacle(-1, y,"#", true);      // left
-            map[y + offset][gridW + 1] = new Obstacle(gridW, y,"#", true); // right
+            map[y + offset][0] = new Obstacle(-1, y,"#", true, true);      // left
+            map[y + offset][gridW + 1] = new Obstacle(gridW, y,"#", true, true); // right
         }
 
         // Adding Player
@@ -128,6 +132,26 @@ public class Simulation
         }
 
         logger.info("Drawable map generated successfully.");
+        return sb.toString();
+    }
+
+    public void addMsgToShow(String msg)
+    {
+        messages.add(msg);
+        logger.info("Message added successfully.");
+    }
+
+    public String getMessagesToShow()
+    {
+        StringBuilder sb = new StringBuilder();
+
+        for (String message : messages) {
+            sb.append(message);
+            sb.append("\n"); // Add newline after each message
+        }
+        messages.clear();
+
+        logger.info("Messages to show generated successfully.");
         return sb.toString();
     }
 
@@ -269,15 +293,15 @@ public class Simulation
 
         // --- Obstacles ---
         List<Obstacle> obstacles = new ArrayList<>();
-        obstacles.add(new Obstacle(6,8,"#", false));
-        obstacles.add(new Obstacle(7,2,"#", false));
-        obstacles.add(new Obstacle(0,3,"#", false));
-        obstacles.add(new Obstacle(11,12,"#", false));
-        obstacles.add(new Obstacle(11,0,"#", false));
-        obstacles.add(new Obstacle(10,9,"#", false));
-        obstacles.add(new Obstacle(0,5,"#", false));
-        obstacles.add(new Obstacle(9,3,"#", false));
-        obstacles.add(new Obstacle(0,8,"#", false));
+        obstacles.add(new Obstacle(6,8,"#", false, false));
+        obstacles.add(new Obstacle(7,2,"#", false, false));
+        obstacles.add(new Obstacle(0,3,"#", false, false));
+        obstacles.add(new Obstacle(11,12,"#", false, false));
+        obstacles.add(new Obstacle(11,0,"#", false, false));
+        obstacles.add(new Obstacle(10,9,"#", false, false));
+        obstacles.add(new Obstacle(0,5,"#", false, false));
+        obstacles.add(new Obstacle(9,3,"#", false, false));
+        obstacles.add(new Obstacle(0,8,"#", false, false));
 
         // Add requirements
         Collectable superTurquoiseMap = collectables.get(0);
@@ -304,14 +328,14 @@ public class Simulation
         // --- Border Walls ---
         for (int x = -1; x <= gridW; x++)
         {
-            map[0][x + offset] = new Obstacle(x, -1,"#", true);      // top
-            map[gridH + 1][x + offset] = new Obstacle(x, gridH,"#", true); // bottom
+            map[0][x + offset] = new Obstacle(x, -1,"#", true, true);      // top
+            map[gridH + 1][x + offset] = new Obstacle(x, gridH,"#", true, true); // bottom
         }
 
         for (int y = 0; y < gridH; y++)
         {
-            map[y + offset][0] = new Obstacle(-1, y,"#", true);      // left
-            map[y + offset][gridW + 1] = new Obstacle(gridW, y,"#", true); // right
+            map[y + offset][0] = new Obstacle(-1, y,"#", true, true);      // left
+            map[y + offset][gridW + 1] = new Obstacle(gridW, y,"#", true, true); // right
         }
 
         // Adding Player

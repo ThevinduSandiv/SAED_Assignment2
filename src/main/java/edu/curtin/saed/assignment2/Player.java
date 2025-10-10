@@ -30,6 +30,11 @@ public class Player implements MapObject
         logger.info(String.format("Player moves the step -> x:%d ,y:%d", stepX, stepY));
     }
 
+    public List<Collectable> getInventory()
+    {
+        return inventory;
+    }
+
     @Override
     public boolean isSolid()
     {
