@@ -11,5 +11,5 @@ public interface MapObject
     int getYPosition();
     String getMapIcon();
 
-    boolean performAction(Player player);
+    boolean performAction(Player player, Simulation sim);
 }

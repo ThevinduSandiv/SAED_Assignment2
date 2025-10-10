@@ -73,7 +73,7 @@ public class Player implements MapObject
     }
 
     @Override
-    public boolean performAction(Player player)
+    public boolean performAction(Player player, Simulation sim)
     {
         // Do Nothing
         return true;

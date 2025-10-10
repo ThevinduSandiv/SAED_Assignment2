@@ -55,7 +55,7 @@ public class Path implements MapObject
     }
 
     @Override
-    public boolean performAction(Player player)
+    public boolean performAction(Player player, Simulation sim)
     {
         return true;
     }

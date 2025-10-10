@@ -17,13 +17,15 @@ public interface MyParserConstants {
   /** RegularExpression Id. */
   int AT = 7;
   /** RegularExpression Id. */
-  int SIZE = 8;
+  int MESSAGE = 8;
   /** RegularExpression Id. */
-  int REQUIRES = 9;
+  int SIZE = 9;
   /** RegularExpression Id. */
-  int STRING = 10;
+  int REQUIRES = 10;
   /** RegularExpression Id. */
-  int COORDINATE = 11;
+  int STRING = 11;
+  /** RegularExpression Id. */
+  int COORDINATE = 12;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -38,6 +40,7 @@ public interface MyParserConstants {
     "\"obstacle\"",
     "\"item\"",
     "\"at\"",
+    "\"message\"",
     "\"size\"",
     "\"requires\"",
     "<STRING>",

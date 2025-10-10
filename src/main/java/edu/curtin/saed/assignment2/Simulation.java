@@ -44,6 +44,22 @@ public class Simulation
                 map[y][x] = o;
             }
         }
+        logger.info("Obstacles added successfully.");
+    }
+
+    public void addCollectables(List<Collectable> collectableList)
+    {
+        for (Collectable c : collectableList)
+        {
+            int x = c.getXPosition() + offset;
+            int y = c.getYPosition() + offset;
+
+            if (y >= 0 && y < gridH + 2 && x >= 0 && x < gridW + 2)
+            {
+                map[y][x] = c;
+            }
+        }
+        logger.info("Collectables added successfully.");
     }
 
     public void addWalls()
@@ -133,7 +149,7 @@ public class Simulation
         }
         else
         {
-            if(target.performAction(player))
+            if(target.performAction(player, this))
             {
                 map[player.getYPosition() + 1][player.getXPosition() + 1] = new Path(true);
                 map[checkingY][checkingX] = player;

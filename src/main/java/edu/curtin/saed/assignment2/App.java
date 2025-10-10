@@ -65,7 +65,7 @@ public class App implements NativeKeyListener
         catch(edu.curtin.saed.assignment2.ParseException e)
         {
            logger.severe("Parsing error!");
-            logger.info(e.getMessage());
+           logger.severe(e.getMessage());
         }
     }
 

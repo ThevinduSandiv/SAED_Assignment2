@@ -7,14 +7,37 @@ import java.util.List;
 public class MyParser implements MyParserConstants {
 
   static final public void run(Simulation sim) throws ParseException {
-    readObstacles(sim);
+    label_1:
+    while (true) {
+      switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+      case OBSTACLE:
+      case COLLECTABLE:
+        ;
+        break;
+      default:
+        jj_la1[0] = jj_gen;
+        break label_1;
+      }
+      switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+      case OBSTACLE:
+        readObstacles(sim);
+        break;
+      case COLLECTABLE:
+        readCollectables(sim);
+        break;
+      default:
+        jj_la1[1] = jj_gen;
+        jj_consume_token(-1);
+        throw new ParseException();
+      }
+    }
   }
 
   static final public void readObstacles(Simulation sim) throws ParseException {
-    label_1:
+    label_2:
     while (true) {
       jj_consume_token(OBSTACLE);
-      jj_consume_token(12);
+      jj_consume_token(13);
             // New Lists to store the coordinates and requirements
             List<int[]> coordinates = new ArrayList<int[]>();
             List<String> requirements = new ArrayList<String>();
@@ -23,17 +46,17 @@ public class MyParser implements MyParserConstants {
                 // Parse first coordinate token and add to the list
                 String[] xy1 = token.image.replaceAll("[()]", "").split(",");
                 coordinates.add(new int[]{ Integer.parseInt(xy1[0]), Integer.parseInt(xy1[1]) });
-      label_2:
+      label_3:
       while (true) {
         switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
-        case 13:
+        case 14:
           ;
           break;
         default:
-          jj_la1[0] = jj_gen;
-          break label_2;
+          jj_la1[2] = jj_gen;
+          break label_3;
         }
-        jj_consume_token(13);
+        jj_consume_token(14);
         jj_consume_token(COORDINATE);
                 // Parse additional coordinates and add to the list
                 String[] xy2 = token.image.replaceAll("[()]", "").split(",");
@@ -44,23 +67,23 @@ public class MyParser implements MyParserConstants {
                     // Add first requirement string (remove quotes)
                     String req1 = token.image.replaceAll("\u005c"", "");
                     requirements.add(req1);
-      label_3:
+      label_4:
       while (true) {
         switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
-        case 13:
+        case 14:
           ;
           break;
         default:
-          jj_la1[1] = jj_gen;
-          break label_3;
+          jj_la1[3] = jj_gen;
+          break label_4;
         }
-        jj_consume_token(13);
+        jj_consume_token(14);
         jj_consume_token(STRING);
                         // Add additional requirement strings (remove quotes)
                         String req2 = token.image.replaceAll("\u005c"", "");
                         requirements.add(req2);
       }
-      jj_consume_token(14);
+      jj_consume_token(15);
          // Create Obstacle objects
          List<Obstacle> createdObstacles = new ArrayList<Obstacle>();
         for(int[] coord : coordinates)
@@ -81,8 +104,65 @@ public class MyParser implements MyParserConstants {
         ;
         break;
       default:
-        jj_la1[2] = jj_gen;
-        break label_1;
+        jj_la1[4] = jj_gen;
+        break label_2;
+      }
+    }
+  }
+
+  static final public void readCollectables(Simulation sim) throws ParseException {
+    label_5:
+    while (true) {
+      jj_consume_token(COLLECTABLE);
+      jj_consume_token(STRING);
+            // Get the item name (remove quotes)
+            String itemName = token.image.replaceAll("\u005c"", "");
+      jj_consume_token(13);
+            // New Lists to store the coordinates and message
+            List<int[]> coordinates = new ArrayList<int[]>();
+            String message = "";
+      jj_consume_token(AT);
+      jj_consume_token(COORDINATE);
+                // Parse first coordinate token and add to the list
+                String[] xy1 = token.image.replaceAll("[()]", "").split(",");
+                coordinates.add(new int[]{ Integer.parseInt(xy1[0]), Integer.parseInt(xy1[1]) });
+      label_6:
+      while (true) {
+        switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+        case 14:
+          ;
+          break;
+        default:
+          jj_la1[5] = jj_gen;
+          break label_6;
+        }
+        jj_consume_token(14);
+        jj_consume_token(COORDINATE);
+                // Parse additional coordinates and add to the list
+                String[] xy2 = token.image.replaceAll("[()]", "").split(",");
+                coordinates.add(new int[]{ Integer.parseInt(xy2[0]), Integer.parseInt(xy2[1]) });
+      }
+      jj_consume_token(MESSAGE);
+      jj_consume_token(STRING);
+            // Get the message string (remove quotes)
+            message = token.image.replaceAll("\u005c"", "");
+      jj_consume_token(15);
+         // Create Collectable objects
+         List<Collectable> createdCollectables = new ArrayList<Collectable>();
+        for(int[] coord : coordinates)
+        {
+            // Use item name as both name and icon, or you could modify this as needed
+            Collectable coll = new Collectable(itemName, coord[0], coord[1], message, true, "I");
+            createdCollectables.add(coll);
+        }
+        sim.addCollectables(createdCollectables);
+      switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+      case COLLECTABLE:
+        ;
+        break;
+      default:
+        jj_la1[6] = jj_gen;
+        break label_5;
       }
     }
   }
@@ -97,13 +177,13 @@ public class MyParser implements MyParserConstants {
   static public Token jj_nt;
   static private int jj_ntk;
   static private int jj_gen;
-  static final private int[] jj_la1 = new int[3];
+  static final private int[] jj_la1 = new int[7];
   static private int[] jj_la1_0;
   static {
       jj_la1_init_0();
    }
    private static void jj_la1_init_0() {
-      jj_la1_0 = new int[] {0x2000,0x2000,0x20,};
+      jj_la1_0 = new int[] {0x60,0x60,0x4000,0x4000,0x20,0x4000,0x40,};
    }
 
   /** Constructor with InputStream. */
@@ -124,7 +204,7 @@ public class MyParser implements MyParserConstants {
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   /** Reinitialise. */
@@ -138,7 +218,7 @@ public class MyParser implements MyParserConstants {
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   /** Constructor. */
@@ -155,7 +235,7 @@ public class MyParser implements MyParserConstants {
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   /** Reinitialise. */
@@ -165,7 +245,7 @@ public class MyParser implements MyParserConstants {
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   /** Constructor with generated Token Manager. */
@@ -181,7 +261,7 @@ public class MyParser implements MyParserConstants {
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   /** Reinitialise. */
@@ -190,7 +270,7 @@ public class MyParser implements MyParserConstants {
     token = new Token();
     jj_ntk = -1;
     jj_gen = 0;
-    for (int i = 0; i < 3; i++) jj_la1[i] = -1;
+    for (int i = 0; i < 7; i++) jj_la1[i] = -1;
   }
 
   static private Token jj_consume_token(int kind) throws ParseException {
@@ -241,12 +321,12 @@ public class MyParser implements MyParserConstants {
   /** Generate ParseException. */
   static public ParseException generateParseException() {
     jj_expentries.clear();
-    boolean[] la1tokens = new boolean[15];
+    boolean[] la1tokens = new boolean[16];
     if (jj_kind >= 0) {
       la1tokens[jj_kind] = true;
       jj_kind = -1;
     }
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 7; i++) {
       if (jj_la1[i] == jj_gen) {
         for (int j = 0; j < 32; j++) {
           if ((jj_la1_0[i] & (1<<j)) != 0) {
@@ -255,7 +335,7 @@ public class MyParser implements MyParserConstants {
         }
       }
     }
-    for (int i = 0; i < 15; i++) {
+    for (int i = 0; i < 16; i++) {
       if (la1tokens[i]) {
         jj_expentry = new int[1];
         jj_expentry[0] = i;

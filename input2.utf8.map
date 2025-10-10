@@ -1,0 +1,49 @@
+obstacle {
+  at (2,4), (7,1), (5,8)
+  requires "rusty key"
+}
+
+obstacle {
+  at (4,6), (9,3), (1,9)
+  requires "healing potion", "torch"
+}
+
+obstacle {
+  at (6,2), (3,7), (8,5)
+  requires "silver coin"
+}
+
+obstacle {
+  at (0,8), (5,3), (7,10)
+  requires "wooden staff", "glowing rune"
+}
+
+obstacle {
+  at (3,5), (8,2), (1,6)
+  requires "iron dagger"
+}
+
+item "rusty key" {
+  at (2,2), (6,7)
+  message "An old, rusty key that might still work."
+}
+
+item "healing potion" {
+  at (4,4), (8,8)
+  message "A red potion that restores health when consumed."
+}
+
+item "silver coin" {
+  at (1,1), (9,9)
+  message "A shiny silver coin with strange markings."
+}
+
+item "wooden staff" {
+  at (3,3)
+  message "A simple wooden staff that hums with energy."
+}
+
+item "iron dagger" {
+  at (7,7), (0,0)
+  message "A sharp iron dagger, well-balanced for throwing."
+}

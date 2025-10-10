@@ -15,6 +15,7 @@ TOKEN: {
     < OBSTACLE: "obstacle" >
     | < COLLECTABLE: "item" >
     | < AT: "at" >
+    | < MESSAGE: "message" >
     | < SIZE: "size" >
     | < REQUIRES: "requires" >
     | < STRING: "\"" (~["\"", "\n", "\r"])* "\"" > // Any charcter except newlines surrounded by '"'
@@ -25,7 +26,7 @@ TOKEN: {
 void run(Simulation sim) :
 {}
 {
-    readObstacles(sim)
+    ( readObstacles(sim) | readCollectables(sim) )*
 }
 
 void readObstacles(Simulation sim) :
@@ -86,6 +87,57 @@ void readObstacles(Simulation sim) :
             createdObstacles.add(obs);
         }
         sim.addObstacles(createdObstacles);
+        }
+    )+
+}
+
+void readCollectables(Simulation sim) :
+{}
+{
+    (
+        <COLLECTABLE>
+        <STRING>
+        {
+            // Get the item name (remove quotes)
+            String itemName = token.image.replaceAll("\"", "");
+        }
+        "{"
+        {
+            // New Lists to store the coordinates and message
+            List<int[]> coordinates = new ArrayList<int[]>();
+            String message = "";
+        }
+        <AT>
+            <COORDINATE>
+            {
+                // Parse first coordinate token and add to the list
+                String[] xy1 = token.image.replaceAll("[()]", "").split(",");
+                coordinates.add(new int[]{ Integer.parseInt(xy1[0]), Integer.parseInt(xy1[1]) });
+            }
+        (
+            "," <COORDINATE>
+            {
+                // Parse additional coordinates and add to the list
+                String[] xy2 = token.image.replaceAll("[()]", "").split(",");
+                coordinates.add(new int[]{ Integer.parseInt(xy2[0]), Integer.parseInt(xy2[1]) });
+            }
+        )*
+        <MESSAGE> <STRING>
+        {
+            // Get the message string (remove quotes)
+            message = token.image.replaceAll("\"", "");
+        }
+        "}"
+        {
+         // Create Collectable objects
+         List<Collectable> createdCollectables = new ArrayList<Collectable>();
+        for(int[] coord : coordinates)
+        {
+            // Use item name as both name and icon, or you could modify this as needed
+            Collectable coll = new Collectable(itemName, coord[0], coord[1], message, true, "I");
+            createdCollectables.add(coll);
+        }
+        sim.addCollectables(createdCollectables);
         }
     )+
 }
