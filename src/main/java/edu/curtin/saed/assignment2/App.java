@@ -50,7 +50,7 @@ public class App implements NativeKeyListener
 
         redrawMap();
         while(isRunning)
-        {} // For now keeps the main app running
+        {} // TODO: For now keeps the main app running
     }
 
     private static void readFile(Simulation sim, InputStream in)
@@ -73,8 +73,10 @@ public class App implements NativeKeyListener
     private static void redrawMap()
     {
         clearScreen();
-        System.out.println(sim.getDrawableMap());
         System.out.println(sim.getMessagesToShow());
+        System.out.println(sim.getDrawableMap());
+        System.out.println("Inventory: " + sim.getPlayer().getInventoryAsString());
+        System.out.println(); // Blank Line
     }
 
 

@@ -35,6 +35,27 @@ public class Player implements MapObject
         return inventory;
     }
 
+    public String getInventoryAsString()
+    {
+        StringBuilder sb = new StringBuilder();
+        boolean first = true;
+        sb.append("[");
+        for(Collectable c : inventory)
+        {
+            if(!first)
+            {
+                sb.append(", ");
+            }
+            else
+            {
+                first = false;
+            }
+            sb.append("\"").append(c.getName());
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
     @Override
     public boolean isSolid()
     {

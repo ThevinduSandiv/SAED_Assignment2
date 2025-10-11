@@ -36,6 +36,11 @@ public class Simulation
         goalPos[1] = 0;
     }
 
+    public Player getPlayer()
+    {
+        return player;
+    }
+
     public void addObstacles(List<Obstacle> obstacleList)
     {
         for (Obstacle o : obstacleList)
@@ -147,7 +152,7 @@ public class Simulation
 
         for (String message : messages) {
             sb.append(message);
-            sb.append("\n"); // Add newline after each message
+            sb.append("\n"); // Add new-line after each message
         }
         messages.clear();
 

@@ -85,6 +85,7 @@ public class Obstacle implements MapObject
 
         List<Collectable> inventory = player.getInventory();
         boolean available = true;
+        List<Collectable> removingItems = new ArrayList<>();
 
         for(String item : requiredItems)
         {
@@ -94,6 +95,7 @@ public class Obstacle implements MapObject
                 if(c.getName().equals(item))
                 {
                     check = true;
+                    removingItems.add(c);
                     break;
                 }
             }
@@ -107,21 +109,33 @@ public class Obstacle implements MapObject
 
         if(available)
         {
+            inventory.removeAll(removingItems); // Remove the used-items
+            sim.addMsgToShow("Hooray!! You pass the obstacle.");
+            sim.addMsgToShow("You have used items " + getRequiredAsString());
             return true;
         }
         else
         {
-            StringBuilder sb = new StringBuilder();
-            for (String item : requiredItems)
-            {
-                sb.append(item);
-                sb.append(", ");
-            }
-
-            sim.addMsgToShow(String.format("You need to collect %s to pass this obstacle!", sb.toString()));
+            sim.addMsgToShow(String.format("You need to collect %s to pass this obstacle!", getRequiredAsString()));
         }
 
 
         return false;
+    }
+
+    private String getRequiredAsString()
+    {
+        boolean first = true;
+        StringBuilder sb = new StringBuilder();
+        for (String item : requiredItems)
+        {
+            if(!first)
+            {
+                sb.append(", ");
+            }
+            first = false;
+            sb.append("\"").append(item).append("\"");
+        }
+        return sb.toString();
     }
 }
