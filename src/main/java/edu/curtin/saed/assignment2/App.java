@@ -41,7 +41,7 @@ public class App implements NativeKeyListener
         logger.info("Starting Simulation");
         //clearScreen();
 
-        sim = new Simulation(12, 13);
+        sim = new Simulation();
 
         readFile(sim, in);
 
@@ -133,25 +133,25 @@ public class App implements NativeKeyListener
 
             case NativeKeyEvent.VC_UP:
                 logger.info("Player moved up - clicked");
-                sim.movePlayer(0, -1);
+                sim.movePlayer(-1, 0);
                 redrawMap();
                 break;
 
             case NativeKeyEvent.VC_DOWN:
                 logger.info("Player moved down - clicked");
-                sim.movePlayer(0, 1);
+                sim.movePlayer(1, 0);
                 redrawMap();
                 break;
 
             case NativeKeyEvent.VC_LEFT:
                 logger.info("Player moved left - clicked");
-                sim.movePlayer(-1, 0);
+                sim.movePlayer(0, -1);
                 redrawMap();
                 break;
 
             case NativeKeyEvent.VC_RIGHT:
                 logger.info("Player moved right - clicked");
-                sim.movePlayer(1, 0);
+                sim.movePlayer(0, 1);
                 redrawMap();
                 break;
 

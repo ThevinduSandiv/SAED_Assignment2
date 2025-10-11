@@ -37,13 +37,13 @@ public class Path implements MapObject
     }
 
     @Override
-    public int getXPosition()
+    public int getRowPosition()
     {
         return 0; // Fake position
     }
 
     @Override
-    public int getYPosition()
+    public int getColPosition()
     {
         return 0; // Fake position
     }

@@ -21,11 +21,13 @@ public interface MyParserConstants {
   /** RegularExpression Id. */
   int SIZE = 9;
   /** RegularExpression Id. */
-  int REQUIRES = 10;
+  int START = 10;
   /** RegularExpression Id. */
-  int STRING = 11;
+  int REQUIRES = 11;
   /** RegularExpression Id. */
-  int COORDINATE = 12;
+  int STRING = 12;
+  /** RegularExpression Id. */
+  int COORDINATE = 13;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -42,6 +44,7 @@ public interface MyParserConstants {
     "\"at\"",
     "\"message\"",
     "\"size\"",
+    "\"start\"",
     "\"requires\"",
     "<STRING>",
     "<COORDINATE>",

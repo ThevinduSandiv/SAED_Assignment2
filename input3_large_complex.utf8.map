@@ -1,0 +1,27 @@
+size(20,15)
+start(10,14)
+
+obstacle {
+at (5,5), (15,5), (10,10)
+requires "master key", "magic amulet"
+}
+
+obstacle {
+at (2,2), (18,2), (2,12), (18,12)
+requires "torch"
+}
+
+item "master key" {
+at (1,1), (19,1)
+message "The master key opens all doors"
+}
+
+item "magic amulet" {
+at (10,1)
+message "A glowing magical amulet"
+}
+
+item "torch" {
+at (5,10), (15,10)
+message "A bright torch to light your way"
+}

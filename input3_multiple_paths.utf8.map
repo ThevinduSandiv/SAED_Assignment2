@@ -1,0 +1,27 @@
+size(12,8)
+start(6,7)
+
+obstacle {
+at (3,3), (4,3), (5,3)
+requires "fire scroll"
+}
+
+obstacle {
+at (7,3), (8,3), (9,3)
+requires "ice scroll"
+}
+
+obstacle {
+at (6,1)
+requires "fire scroll", "ice scroll"
+}
+
+item "fire scroll" {
+at (2,2), (2,6)
+message "A scroll containing fire magic"
+}
+
+item "ice scroll" {
+at (10,2), (10,6)
+message "A scroll containing ice magic"
+}

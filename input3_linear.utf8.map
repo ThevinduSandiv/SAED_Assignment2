@@ -1,0 +1,32 @@
+size(10,3)
+start(0,1)
+
+obstacle {
+at (2,1)
+requires "blue key"
+}
+
+obstacle {
+at (4,1)
+requires "red key"
+}
+
+obstacle {
+at (6,1)
+requires "gold key"
+}
+
+item "blue key" {
+at (1,1)
+message "Blue key for the first door"
+}
+
+item "red key" {
+at (3,1)
+message "Red key for the second door"
+}
+
+item "gold key" {
+at (5,1)
+message "Gold key for the final door"
+}

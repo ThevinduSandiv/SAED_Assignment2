@@ -17,6 +17,7 @@ TOKEN: {
     | < AT: "at" >
     | < MESSAGE: "message" >
     | < SIZE: "size" >
+    | < START: "start" >
     | < REQUIRES: "requires" >
     | < STRING: "\"" (~["\"", "\n", "\r"])* "\"" > // Any charcter except newlines surrounded by '"'
     | < COORDINATE: "(" (["0"-"9"])+ "," (["0"-"9"])+ ")" >
@@ -26,7 +27,41 @@ TOKEN: {
 void run(Simulation sim) :
 {}
 {
-    ( readObstacles(sim) | readCollectables(sim) )*
+    readMapSize(sim) // Do this first
+    ( readPlayer(sim) | readObstacles(sim) | readCollectables(sim) )*
+}
+
+void readMapSize(Simulation sim) :
+{}
+{
+    <SIZE>
+    <COORDINATE>
+    {
+        // Parse the coordinate to get h and w
+        String coord = token.image.replaceAll("[()]", "");
+        String[] xy = coord.split(",");
+        int h = Integer.parseInt(xy[0]);
+        int w = Integer.parseInt(xy[1]);
+
+        sim.createMap(h, w);
+    }
+}
+
+void readPlayer(Simulation sim) :
+{}
+{
+    <START>
+    <COORDINATE>
+    {
+        // Parse the coordinate to get x and y
+        String coord = token.image.replaceAll("[()]", "");
+        String[] xy = coord.split(",");
+        int x = Integer.parseInt(xy[0]);
+        int y = Integer.parseInt(xy[1]);
+
+        // Set the player's starting position in the simulation
+        sim.addPlayer(x, y);
+    }
 }
 
 void readObstacles(Simulation sim) :

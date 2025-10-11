@@ -1,0 +1,12 @@
+size(5,5)
+start(0,0)
+
+obstacle {
+at (2,2)
+requires "key"
+}
+
+item "key" {
+at (1,1)
+message "A simple key"
+}

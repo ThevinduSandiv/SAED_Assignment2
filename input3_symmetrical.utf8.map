@@ -1,0 +1,42 @@
+size(11,11)
+start(5,5)
+
+obstacle {
+at (5,0), (5,1), (5,2), (5,3), (5,4)
+requires "north gem"
+}
+
+obstacle {
+at (5,6), (5,7), (5,8), (5,9), (5,10)
+requires "south gem"
+}
+
+obstacle {
+at (0,5), (1,5), (2,5), (3,5), (4,5)
+requires "west gem"
+}
+
+obstacle {
+at (6,5), (7,5), (8,5), (9,5), (10,5)
+requires "east gem"
+}
+
+item "north gem" {
+at (5,10)
+message "The northern gem glows blue"
+}
+
+item "south gem" {
+at (5,0)
+message "The southern gem glows red"
+}
+
+item "west gem" {
+at (10,5)
+message "The western gem glows green"
+}
+
+item "east gem" {
+at (0,5)
+message "The eastern gem glows yellow"
+}

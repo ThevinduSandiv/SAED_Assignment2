@@ -1,9 +1,8 @@
-size (12,13)
-start (0,0)
-
+size(12,13)
+start(0,0)
 
 obstacle {
-  at (0,3), (2,4), (7,1), (5,8)
+  at (2,4), (7,1), (5,8)
   requires "rusty key"
 }
 

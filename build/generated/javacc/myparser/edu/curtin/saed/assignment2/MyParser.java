@@ -7,11 +7,13 @@ import java.util.List;
 public class MyParser implements MyParserConstants {
 
   static final public void run(Simulation sim) throws ParseException {
+    readMapSize(sim);
     label_1:
     while (true) {
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
       case OBSTACLE:
       case COLLECTABLE:
+      case START:
         ;
         break;
       default:
@@ -19,6 +21,9 @@ public class MyParser implements MyParserConstants {
         break label_1;
       }
       switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
+      case START:
+        readPlayer(sim);
+        break;
       case OBSTACLE:
         readObstacles(sim);
         break;
@@ -33,11 +38,36 @@ public class MyParser implements MyParserConstants {
     }
   }
 
+  static final public void readMapSize(Simulation sim) throws ParseException {
+    jj_consume_token(SIZE);
+    jj_consume_token(COORDINATE);
+        // Parse the coordinate to get h and w
+        String coord = token.image.replaceAll("[()]", "");
+        String[] xy = coord.split(",");
+        int h = Integer.parseInt(xy[0]);
+        int w = Integer.parseInt(xy[1]);
+
+        sim.createMap(h, w);
+  }
+
+  static final public void readPlayer(Simulation sim) throws ParseException {
+    jj_consume_token(START);
+    jj_consume_token(COORDINATE);
+        // Parse the coordinate to get x and y
+        String coord = token.image.replaceAll("[()]", "");
+        String[] xy = coord.split(",");
+        int x = Integer.parseInt(xy[0]);
+        int y = Integer.parseInt(xy[1]);
+
+        // Set the player's starting position in the simulation
+        sim.addPlayer(x, y);
+  }
+
   static final public void readObstacles(Simulation sim) throws ParseException {
     label_2:
     while (true) {
       jj_consume_token(OBSTACLE);
-      jj_consume_token(13);
+      jj_consume_token(14);
             // New Lists to store the coordinates and requirements
             List<int[]> coordinates = new ArrayList<int[]>();
             List<String> requirements = new ArrayList<String>();
@@ -49,14 +79,14 @@ public class MyParser implements MyParserConstants {
       label_3:
       while (true) {
         switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
-        case 14:
+        case 15:
           ;
           break;
         default:
           jj_la1[2] = jj_gen;
           break label_3;
         }
-        jj_consume_token(14);
+        jj_consume_token(15);
         jj_consume_token(COORDINATE);
                 // Parse additional coordinates and add to the list
                 String[] xy2 = token.image.replaceAll("[()]", "").split(",");
@@ -70,20 +100,20 @@ public class MyParser implements MyParserConstants {
       label_4:
       while (true) {
         switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
-        case 14:
+        case 15:
           ;
           break;
         default:
           jj_la1[3] = jj_gen;
           break label_4;
         }
-        jj_consume_token(14);
+        jj_consume_token(15);
         jj_consume_token(STRING);
                         // Add additional requirement strings (remove quotes)
                         String req2 = token.image.replaceAll("\u005c"", "");
                         requirements.add(req2);
       }
-      jj_consume_token(15);
+      jj_consume_token(16);
          // Create Obstacle objects
          List<Obstacle> createdObstacles = new ArrayList<Obstacle>();
         for(int[] coord : coordinates)
@@ -117,7 +147,7 @@ public class MyParser implements MyParserConstants {
       jj_consume_token(STRING);
             // Get the item name (remove quotes)
             String itemName = token.image.replaceAll("\u005c"", "");
-      jj_consume_token(13);
+      jj_consume_token(14);
             // New Lists to store the coordinates and message
             List<int[]> coordinates = new ArrayList<int[]>();
             String message = "";
@@ -129,14 +159,14 @@ public class MyParser implements MyParserConstants {
       label_6:
       while (true) {
         switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
-        case 14:
+        case 15:
           ;
           break;
         default:
           jj_la1[5] = jj_gen;
           break label_6;
         }
-        jj_consume_token(14);
+        jj_consume_token(15);
         jj_consume_token(COORDINATE);
                 // Parse additional coordinates and add to the list
                 String[] xy2 = token.image.replaceAll("[()]", "").split(",");
@@ -146,7 +176,7 @@ public class MyParser implements MyParserConstants {
       jj_consume_token(STRING);
             // Get the message string (remove quotes)
             message = token.image.replaceAll("\u005c"", "");
-      jj_consume_token(15);
+      jj_consume_token(16);
          // Create Collectable objects
          List<Collectable> createdCollectables = new ArrayList<Collectable>();
         for(int[] coord : coordinates)
@@ -183,7 +213,7 @@ public class MyParser implements MyParserConstants {
       jj_la1_init_0();
    }
    private static void jj_la1_init_0() {
-      jj_la1_0 = new int[] {0x60,0x60,0x4000,0x4000,0x20,0x4000,0x40,};
+      jj_la1_0 = new int[] {0x460,0x460,0x8000,0x8000,0x20,0x8000,0x40,};
    }
 
   /** Constructor with InputStream. */
@@ -321,7 +351,7 @@ public class MyParser implements MyParserConstants {
   /** Generate ParseException. */
   static public ParseException generateParseException() {
     jj_expentries.clear();
-    boolean[] la1tokens = new boolean[16];
+    boolean[] la1tokens = new boolean[17];
     if (jj_kind >= 0) {
       la1tokens[jj_kind] = true;
       jj_kind = -1;
@@ -335,7 +365,7 @@ public class MyParser implements MyParserConstants {
         }
       }
     }
-    for (int i = 0; i < 16; i++) {
+    for (int i = 0; i < 17; i++) {
       if (la1tokens[i]) {
         jj_expentry = new int[1];
         jj_expentry[0] = i;

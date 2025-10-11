@@ -7,8 +7,8 @@ public interface MapObject
     boolean isPresentInGame();
     void makeVisible();
 
-    int getXPosition();
-    int getYPosition();
+    int getRowPosition();
+    int getColPosition();
     String getMapIcon();
 
     boolean performAction(Player player, Simulation sim);

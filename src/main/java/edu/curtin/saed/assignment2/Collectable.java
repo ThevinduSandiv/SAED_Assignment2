@@ -3,18 +3,18 @@ package edu.curtin.saed.assignment2;
 public class Collectable implements MapObject
 {
     private String name;
-    private int x;
-    private int y;
+    private int row;
+    private int col;
     private String msg;
     private String icon;
     private boolean isPresent;
     private boolean isVisible;
 
-    public Collectable(String name, int x, int y, String msg, boolean isPresent, String icon)
+    public Collectable(String name, int row, int col, String msg, boolean isPresent, String icon)
     {
         this.name = name;
-        this.x = x;
-        this.y = y;
+        this.row = row;
+        this.col = col;
         this.msg = msg;
         this.icon = icon;
         this.isPresent = isPresent;
@@ -56,15 +56,15 @@ public class Collectable implements MapObject
     }
 
     @Override
-    public int getXPosition()
+    public int getRowPosition()
     {
-        return x;
+        return row;
     }
 
     @Override
-    public int getYPosition()
+    public int getColPosition()
     {
-        return y;
+        return col;
     }
 
     @Override

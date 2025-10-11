@@ -9,7 +9,7 @@ public class Simulation
 {
     private static final Logger logger = Logger.getLogger(Simulation.class.getName());
 
-    private final boolean CHEAT = true;
+    private final boolean CHEAT = false;
     private final int offset = 1;
 
     private int gridH;
@@ -21,15 +21,8 @@ public class Simulation
     private List<String> messages;
     private int[] goalPos;
 
-    public Simulation(int gridH, int gridW)
+    public Simulation()
     {
-        this.gridH = gridH;
-        this.gridW = gridW;
-
-        map = new MapObject[gridH + 2][gridW + 2];
-        initializeMapWithPaths();
-
-        this.player = new Player(0, 0);
         this.messages = new LinkedList<>();
         goalPos = new int[2];
         goalPos[0] = 0;
@@ -41,18 +34,34 @@ public class Simulation
         return player;
     }
 
+    public void createMap(int h, int w)
+    {
+        gridH = h;
+        gridW = w;
+        map = new MapObject[gridH + 2][gridW + 2];
+        initializeMapWithPaths();
+        logger.info("Map created successfully.");
+    }
+
+    public void addPlayer(int x, int y)
+    {
+        player = new Player(x, y);
+        logger.info("Player added successfully.");
+    }
+
     public void addObstacles(List<Obstacle> obstacleList)
     {
         for (Obstacle o : obstacleList)
         {
-            int x = o.getXPosition() + offset;
-            int y = o.getYPosition() + offset;
+            int row = o.getRowPosition() + offset;
+            int col = o.getColPosition() + offset;
 
-            if (y >= 0 && y < gridH + 2 && x >= 0 && x < gridW + 2)
+            if (row >= 0 && row < gridH + 2 && col >= 0 && col < gridW + 2)
             {
-                map[y][x] = o;
+                map[row][col] = o;
             }
         }
+        showSurrounding(); // Make sure the player sees the surrounding in the beginning.
         logger.info("Obstacles added successfully.");
     }
 
@@ -60,58 +69,64 @@ public class Simulation
     {
         for (Collectable c : collectableList)
         {
-            int x = c.getXPosition() + offset;
-            int y = c.getYPosition() + offset;
+            int row = c.getRowPosition() + offset;
+            int col = c.getColPosition() + offset;
 
-            if (y >= 0 && y < gridH + 2 && x >= 0 && x < gridW + 2)
+            if (row >= 0 && row < gridH + 2 && col >= 0 && col < gridW + 2)
             {
-                map[y][x] = c;
+                map[row][col] = c;
             }
         }
+        showSurrounding(); // Make sure the player sees the surrounding in the beginning.
         logger.info("Collectables added successfully.");
     }
 
     public void addWalls()
     {
-        for (int x = -1; x <= gridW; x++)
+        for (int col = -1; col <= gridW; col++)
         {
-            map[0][x + offset] = new Obstacle(x, -1,"#", true, true);      // top
-            map[gridH + 1][x + offset] = new Obstacle(x, gridH,"#", true, true); // bottom
+            // Top border (row 0)
+            map[0][col + offset] = new Obstacle(0, col, "#", true, true);
+
+            // Bottom border (row gridH+1)
+            map[gridH + 1][col + offset] = new Obstacle(gridH + 1, col, "#", true, true);
         }
 
-        for (int y = 0; y < gridH; y++)
+        for (int row = 0; row < gridH; row++)
         {
-            map[y + offset][0] = new Obstacle(-1, y,"#", true, true);      // left
-            map[y + offset][gridW + 1] = new Obstacle(gridW, y,"#", true, true); // right
+            // Left border (column 0)
+            map[row + offset][0] = new Obstacle(row, 0, "#", true, true);
+
+            // Right border (column gridW+1)
+            map[row + offset][gridW + 1] = new Obstacle(row, gridW + 1, "#", true, true);
         }
 
         // Adding Player
-        int x = player.getXPosition() + offset;
-        int y = player.getYPosition() + offset;
-        map[y][x] = player;
+        int x = player.getRowPosition() + offset;
+        int y = player.getColPosition() + offset;
+        map[x][y] = player;
     }
 
     private void initializeMapWithPaths()
     {
-        for (int y = 0; y < map.length; y++)
+        for (int row = 0; row < map.length; row++)
         {
-            for (int x = 0; x < map[y].length; x++)
+            for (int col = 0; col < map[row].length; col++)
             {
-                map[y][x] = new Path(false);
+                map[row][col] = new Path(false);
             }
         }
-
     }
 
     public String getDrawableMap()
     {
         StringBuilder sb = new StringBuilder();
 
-        for (int y = 0; y < gridH + 2; y++)
+        for (int row = 0; row < gridH + 2; row++)
         {
-            for (int x = 0; x < gridW + 2; x++)
+            for (int col = 0; col < gridW + 2; col++)
             {
-                MapObject obj = map[y][x];
+                MapObject obj = map[row][col];
 
                 if (obj != null)
                 {
@@ -160,30 +175,32 @@ public class Simulation
         return sb.toString();
     }
 
-    public void movePlayer(int stepX, int stepY)
+    public void movePlayer(int stepRow, int stepCol)
     {
         // Position where the player wants to move on to
-        int checkingX = player.getXPosition() + 1 + stepX;
-        int checkingY = player.getYPosition() + 1 + stepY;
-        MapObject target = map[checkingY][checkingX];
-        logger.info(String.format("Player Pos: at x:%d, y:%d", player.getXPosition() + 1, player.getYPosition() + 1));
-        logger.info(String.format("Target Pos: at x:%d, y:%d", checkingX, checkingY));
+        int checkingRow = player.getRowPosition() + 1 + stepRow;  // stepY affects rows
+        int checkingCol = player.getColPosition() + 1 + stepCol;  // stepX affects columns
+
+        MapObject target = map[checkingRow][checkingCol];
+
+        logger.info(String.format("Player Pos: at row:%d, col:%d", player.getRowPosition() + 1, player.getColPosition() + 1));
+        logger.info(String.format("Target Pos: at row:%d, col:%d", checkingRow, checkingCol));
 
         if(target == null)
         {
-            map[player.getYPosition() + 1][player.getXPosition() + 1] = new Path(true);
-            map[checkingY][checkingX] = player;
+            map[player.getRowPosition() + 1][player.getColPosition() + 1] = new Path(true);
+            map[checkingRow][checkingCol] = player;
 
-            player.move(stepX, stepY);
+            player.move(stepRow, stepCol);
         }
         else
         {
             if(target.performAction(player, this))
             {
-                map[player.getYPosition() + 1][player.getXPosition() + 1] = new Path(true);
-                map[checkingY][checkingX] = player;
+                map[player.getRowPosition() + 1][player.getColPosition() + 1] = new Path(true);
+                map[checkingRow][checkingCol] = player;
 
-                player.move(stepX, stepY);
+                player.move(stepRow, stepCol);
             }
         }
         showSurrounding();
@@ -191,29 +208,28 @@ public class Simulation
 
     private void showSurrounding()
     {
-        int x = player.getXPosition() + 1;
-        int y = player.getYPosition() + 1;
+        int row = player.getRowPosition() + 1;
+        int col = player.getColPosition() + 1;
 
         // Define directions: up, down, left, right
         int[][] directions = {
-                {0, -1},  // up
-                {0, 1},   // down
-                {-1, 0},  // left
-                {1, 0}    // right
+                {-1, 0},  // up (decrease row)
+                {1, 0},   // down (increase row)
+                {0, -1},  // left (decrease column)
+                {0, 1}    // right (increase column)
         };
 
         // Reveal tiles in all four directions
         for (int[] dir : directions)
         {
-            int revealX = x + dir[0];
-            int revealY = y + dir[1];
+            int revealRow = row + dir[0];
+            int revealCol = col + dir[1];
 
-            // Boundary check
-            if (revealX >= 0 && revealY >= 0 && revealX < gridW + 2 && revealY < gridH + 2)
+            if (revealRow >= 0 && revealCol >= 0 && revealRow < gridH + 2 && revealCol < gridW + 2)
             {
-                if (map[revealY][revealX] != null)
+                if (map[revealRow][revealCol] != null)
                 {
-                    map[revealY][revealX].makeVisible();
+                    map[revealRow][revealCol].makeVisible();
                 }
             }
         }
@@ -252,6 +268,7 @@ public class Simulation
 
 
     // TODO: Remove/Update Later
+    @Deprecated
     public void testMapGenerator()
     {
         int offset = 1; // for border walls
@@ -287,8 +304,8 @@ public class Simulation
 
         for (Collectable c : collectables)
         {
-            int x = c.getXPosition() + offset;
-            int y = c.getYPosition() + offset;
+            int x = c.getRowPosition() + offset;
+            int y = c.getColPosition() + offset;
 
             if (y >= 0 && y < gridH + 2 && x >= 0 && x < gridW + 2)
             {
@@ -321,8 +338,8 @@ public class Simulation
             o.addRequiredItem(lustrousMap1.getName());
             o.addRequiredItem(charmedGem.getName());
 
-            int x = o.getXPosition() + offset;
-            int y = o.getYPosition() + offset;
+            int x = o.getRowPosition() + offset;
+            int y = o.getColPosition() + offset;
 
             if (y >= 0 && y < gridH + 2 && x >= 0 && x < gridW + 2)
             {
@@ -344,8 +361,8 @@ public class Simulation
         }
 
         // Adding Player
-        int x = player.getXPosition() + offset;
-        int y = player.getYPosition() + offset;
+        int x = player.getRowPosition() + offset;
+        int y = player.getColPosition() + offset;
         map[y][x] = player;
 
         logger.info("Test Map generated successfully!");

@@ -9,25 +9,25 @@ public class Player implements MapObject
     private static final Logger logger = Logger.getLogger(Player.class.getName());
 
 
-    private int x;
-    private int y;
+    private int row; // Row
+    private int col; // Column
     private boolean isVisible;
 
     private List<Collectable> inventory;
 
-    public Player(int x, int y)
+    public Player(int row, int col)
     {
-        this.x = x;
-        this.y = y;
+        this.row = row;
+        this.col = col;
         this.inventory = new ArrayList<>();
         this.isVisible = true;
     }
 
-    public void move(int stepX, int stepY)
+    public void move(int stepRow, int stepCol)
     {
-        x += stepX;
-        y += stepY;
-        logger.info(String.format("Player moves the step -> x:%d ,y:%d", stepX, stepY));
+        row += stepRow;
+        col += stepCol;
+        logger.info(String.format("Player moves the step -> row:%d ,col:%d", stepRow, stepCol));
     }
 
     public List<Collectable> getInventory()
@@ -50,7 +50,7 @@ public class Player implements MapObject
             {
                 first = false;
             }
-            sb.append("\"").append(c.getName());
+            sb.append("\"").append(c.getName()).append("\"");
         }
         sb.append("]");
         return sb.toString();
@@ -81,15 +81,15 @@ public class Player implements MapObject
     }
 
     @Override
-    public int getXPosition()
+    public int getRowPosition()
     {
-        return x;
+        return row;
     }
 
     @Override
-    public int getYPosition()
+    public int getColPosition()
     {
-        return y;
+        return col;
     }
 
     @Override

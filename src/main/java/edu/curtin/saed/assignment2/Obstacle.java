@@ -5,8 +5,8 @@ import java.util.List;
 
 public class Obstacle implements MapObject
 {
-    private int x;
-    private int y;
+    private int row;
+    private int col;
     private String icon;
 
     private boolean isPresent;
@@ -15,10 +15,10 @@ public class Obstacle implements MapObject
 
     private List<String> requiredItems;
 
-    public Obstacle(int x, int y, String icon, boolean isVisible, boolean isUnbreakable)
+    public Obstacle(int row, int col, String icon, boolean isVisible, boolean isUnbreakable)
     {
-        this.x = x;
-        this.y = y;
+        this.row = row;
+        this.col = col;
         this.icon = icon;
         this.isVisible = isVisible;
         this.isUnbreakable = isUnbreakable;
@@ -57,15 +57,15 @@ public class Obstacle implements MapObject
     }
 
     @Override
-    public int getXPosition()
+    public int getRowPosition()
     {
-        return x;
+        return row;
     }
 
     @Override
-    public int getYPosition()
+    public int getColPosition()
     {
-        return y;
+        return col;
     }
 
     @Override
