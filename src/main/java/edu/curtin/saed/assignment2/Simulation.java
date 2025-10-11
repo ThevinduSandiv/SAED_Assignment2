@@ -12,6 +12,8 @@ public class Simulation
     private final boolean CHEAT = false;
     private final int offset = 1;
 
+    private final Runnable simEndMethod;
+
     private int gridH;
     private int gridW;
 
@@ -19,14 +21,13 @@ public class Simulation
     private Player player;
 
     private List<String> messages;
-    private int[] goalPos;
+    private Goal goal;
 
-    public Simulation()
+    public Simulation(Runnable simEndMethod)
     {
+        this.simEndMethod = simEndMethod;
+
         this.messages = new LinkedList<>();
-        goalPos = new int[2];
-        goalPos[0] = 0;
-        goalPos[1] = 0;
     }
 
     public Player getPlayer()
@@ -43,10 +44,16 @@ public class Simulation
         logger.info("Map created successfully.");
     }
 
-    public void addPlayer(int x, int y)
+    public void addPlayer(int row, int col)
     {
-        player = new Player(x, y);
+        player = new Player(row, col);
         logger.info("Player added successfully.");
+    }
+
+    public void addGoal(int row, int col)
+    {
+        goal = new Goal(row, col);
+        logger.info("Goal added successfully.");
     }
 
     public void addObstacles(List<Obstacle> obstacleList)
@@ -102,9 +109,14 @@ public class Simulation
         }
 
         // Adding Player
-        int x = player.getRowPosition() + offset;
-        int y = player.getColPosition() + offset;
-        map[x][y] = player;
+        int r1 = player.getRowPosition() + offset;
+        int c1 = player.getColPosition() + offset;
+        map[r1][c1] = player;
+
+        // Adding Goal
+        int r2 = goal.getRowPosition() + offset;
+        int c2 = goal.getColPosition() + offset;
+        map[r2][c2] = goal;
     }
 
     private void initializeMapWithPaths()
@@ -233,6 +245,12 @@ public class Simulation
                 }
             }
         }
+    }
+
+    public void endGame()
+    {
+        simEndMethod.run();
+        logger.info("Game ended successfully.");
     }
 
 

@@ -41,7 +41,7 @@ public class App implements NativeKeyListener
         logger.info("Starting Simulation");
         //clearScreen();
 
-        sim = new Simulation();
+        sim = new Simulation(App::endGame);
 
         readFile(sim, in);
 
@@ -89,6 +89,18 @@ public class App implements NativeKeyListener
 
     }
 
+    private static void endGame()
+    {
+        System.out.println("Exiting...");
+        isRunning = false;
+        isKeyPressed = true;
+        try {
+            GlobalScreen.unregisterNativeHook();
+        } catch (NativeHookException ex) {
+            ex.printStackTrace();
+        }
+    }
+
     public void setupKeyListener() {
         // Disable JNativeHook logging
         Logger l = Logger.getLogger(GlobalScreen.class.getPackage().getName());
@@ -117,15 +129,9 @@ public class App implements NativeKeyListener
     {
         switch (nativeKeyEvent.getKeyCode()) {
             case NativeKeyEvent.VC_ESCAPE:
-                System.out.println("Exiting...");
-                isRunning = false;
-                isKeyPressed = true;
-                try {
-                    GlobalScreen.unregisterNativeHook();
-                } catch (NativeHookException ex) {
-                    ex.printStackTrace();
-                }
+                endGame();
                 break;
+
             case NativeKeyEvent.VC_SPACE:
                 isKeyPressed = true;
                 redrawMap();
