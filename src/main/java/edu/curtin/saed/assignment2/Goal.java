@@ -58,7 +58,7 @@ public class Goal implements MapObject
     @Override
     public boolean performAction(Player player, Simulation sim)
     {
-        sim.addMsgToShow("You reached the goal!");
+        sim.addMsgToShow(UITranslator.get("won"));
         sim.endGame();
         return true;
     }

@@ -34,6 +34,7 @@ public class App implements NativeKeyListener
             }
         }
 
+        UITranslator.setLanguage("si-LK");
         // Setup the key listener first
         App app = new App();
         app.setupKeyListener();
@@ -75,7 +76,7 @@ public class App implements NativeKeyListener
         clearScreen();
         System.out.println(sim.getMessagesToShow());
         System.out.println(sim.getDrawableMap());
-        System.out.println("Inventory: " + sim.getPlayer().getInventoryAsString());
+        System.out.println(UITranslator.get("inventory") + ": " + sim.getPlayer().getInventoryAsString());
         System.out.println(); // Blank Line
     }
 
@@ -91,7 +92,7 @@ public class App implements NativeKeyListener
 
     private static void endGame()
     {
-        System.out.println("Exiting...");
+        System.out.println(UITranslator.get("exit_msg"));
         isRunning = false;
         isKeyPressed = true;
         try {
@@ -113,7 +114,7 @@ public class App implements NativeKeyListener
             logger.info("Native hook registered successfully.");
         } catch (NativeHookException ex) {
             logger.severe("Failed to register native hook: " + ex.getMessage());
-            System.out.println("Exiting...");
+            System.out.println(UITranslator.get("exit_msg"));
             isRunning = false;
         }
     }

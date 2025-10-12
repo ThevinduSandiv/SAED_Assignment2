@@ -1,6 +1,6 @@
 size(12,13)
 start(0,0)
-
+goal(5,12)
 obstacle {
   at (2,4), (7,1), (5,8)
   requires "rusty key"

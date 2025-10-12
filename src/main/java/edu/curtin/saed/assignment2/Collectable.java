@@ -77,8 +77,8 @@ public class Collectable implements MapObject
     public boolean performAction(Player player, Simulation sim)
     {
         player.getInventory().add(this);
-        sim.addMsgToShow("You collected a " + name + "!");
-        sim.addMsgToShow(msg);
+        sim.addMsgToShow(UITranslator.get("collected_item", name));
+        sim.addMsgToShow(UITranslator.get("msg_label") + ": " + msg);
         return true;
     }
 }

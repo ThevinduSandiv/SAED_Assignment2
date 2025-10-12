@@ -1,0 +1,45 @@
+size (12,3)
+start (7,1)
+goal (5,2)
+obstacle {
+  at (6,0), (0,0), (11,1)
+  requires "lustrous blue pendant", "sublime vial", "purple helmet", "heavy amulet"
+}
+
+item "sublime vial" {
+  at (4,0)
+  message "QPBN"
+}
+
+item "purple helmet" {
+  at (7,1)
+  message "_ce"
+}
+
+
+obstacle {
+  at (5,1)
+  requires "purple helmet"
+}
+
+obstacle {
+  at (1,2)
+  requires "lustrous blue pendant", "heavy amulet", "sublime vial"
+}
+
+item "lustrous blue pendant" {
+  at (6,2)
+  message "he&nDz0NX"
+}
+
+obstacle {
+  at (9,1), (11,2), (8,0), (8,1)
+  requires "lustrous blue pendant", "heavy amulet", "purple helmet"
+}
+
+
+item "heavy amulet" {
+  at (2,0)
+  message "YV0a"
+}
+
