@@ -34,7 +34,7 @@ public class App implements NativeKeyListener
             }
         }
 
-        UITranslator.setLanguage("si-LK");
+        UITranslator.setLanguage("es-ES");
         // Setup the key listener first
         App app = new App();
         app.setupKeyListener();
