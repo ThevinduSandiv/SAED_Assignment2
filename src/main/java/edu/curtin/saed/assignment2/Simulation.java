@@ -191,12 +191,14 @@ public class Simulation
         }
 
         logger.info("Messages to show generated successfully.");
+        messages.clear(); // TODO: Decide if u want to change
         return sb.toString();
     }
 
     public void movePlayer(int stepRow, int stepCol)
     {
-        messages.clear(); //Remove previous messages before the next move
+        currentDate = currentDate.plusDays(1); // pass 1 day
+        // messages.clear(); //Remove previous messages before the next move
 
         // Position where the player wants to move on to
         int checkingRow = player.getRowPosition() + 1 + stepRow;  // stepY affects rows

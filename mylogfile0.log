@@ -1,84 +1,102 @@
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.UIManager setLocale
+Oct 16, 2025 10:30:09 PM edu.curtin.saed.assignment2.UIManager setLocale
 INFO: Setting locale to en-AU
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.App setupKeyListener
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.App setupKeyListener
 INFO: Native hook registered successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.App main
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.App main
 INFO: Starting Simulation
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation createMap
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation createMap
 INFO: Map created successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addPlayer
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addPlayer
 INFO: Player added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addGoal
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addGoal
 INFO: Goal added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.App readFile
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.App readFile
 INFO: Input valid
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
 INFO: Messages to show generated successfully.
-Oct 16, 2025 2:16:53 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+Oct 16, 2025 10:30:10 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
 INFO: Drawable map generated successfully.
-Oct 16, 2025 2:16:56 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+Oct 16, 2025 10:30:14 PM edu.curtin.saed.assignment2.App changeLocale
+INFO: Clearing buffer
+Oct 16, 2025 10:30:14 PM edu.curtin.saed.assignment2.App changeLocale
+INFO: Reading new locale
+Oct 16, 2025 10:30:18 PM edu.curtin.saed.assignment2.UIManager setLocale
+INFO: Setting locale to si-LK
+Oct 16, 2025 10:30:18 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 16, 2025 10:30:18 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 16, 2025 10:30:18 PM edu.curtin.saed.assignment2.App nativeKeyPressed
 INFO: Locale change requested
-Oct 16, 2025 2:17:07 PM edu.curtin.saed.assignment2.UIManager setLocale
-INFO: Setting locale to FTTTTAD
-Oct 16, 2025 2:17:07 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
-INFO: Message added successfully.
-Oct 16, 2025 2:17:07 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
-INFO: Messages to show generated successfully.
-Oct 16, 2025 2:17:07 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
-INFO: Drawable map generated successfully.
-Oct 16, 2025 2:17:09 PM edu.curtin.saed.assignment2.App nativeKeyPressed
-INFO: Player moved up - clicked
-Oct 16, 2025 2:17:09 PM edu.curtin.saed.assignment2.Simulation movePlayer
-INFO: Player Pos: at row:1, col:1
-Oct 16, 2025 2:17:09 PM edu.curtin.saed.assignment2.Simulation movePlayer
-INFO: Target Pos: at row:0, col:1
-Oct 16, 2025 2:17:09 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
-INFO: Message added successfully.
-Oct 16, 2025 2:17:09 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
-INFO: Messages to show generated successfully.
-Oct 16, 2025 2:17:09 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
-INFO: Drawable map generated successfully.
-Oct 16, 2025 2:17:10 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.App nativeKeyPressed
 INFO: Player moved down - clicked
-Oct 16, 2025 2:17:10 PM edu.curtin.saed.assignment2.Simulation movePlayer
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
 INFO: Player Pos: at row:1, col:1
-Oct 16, 2025 2:17:10 PM edu.curtin.saed.assignment2.Simulation movePlayer
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
 INFO: Target Pos: at row:2, col:1
-Oct 16, 2025 2:17:10 PM edu.curtin.saed.assignment2.Player move
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.Player move
 INFO: Player moves the step -> row:1 ,col:0
-Oct 16, 2025 2:17:10 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
 INFO: Messages to show generated successfully.
-Oct 16, 2025 2:17:10 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
 INFO: Drawable map generated successfully.
-Oct 16, 2025 2:17:12 PM edu.curtin.saed.assignment2.App nativeKeyPressed
-INFO: Locale change requested
-Oct 16, 2025 2:17:20 PM edu.curtin.saed.assignment2.UIManager setLocale
-INFO: Setting locale to ESES
-Oct 16, 2025 2:17:20 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:2, col:1
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:3, col:1
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:1 ,col:0
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 16, 2025 10:30:20 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:3, col:1
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:3, col:2
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:0 ,col:1
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:3, col:2
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:2, col:2
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
 INFO: Message added successfully.
-Oct 16, 2025 2:17:20 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:-1 ,col:0
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
 INFO: Messages to show generated successfully.
-Oct 16, 2025 2:17:20 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+Oct 16, 2025 10:30:21 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
 INFO: Drawable map generated successfully.
-Oct 16, 2025 2:17:28 PM edu.curtin.saed.assignment2.App nativeKeyPressed
-INFO: Locale change requested

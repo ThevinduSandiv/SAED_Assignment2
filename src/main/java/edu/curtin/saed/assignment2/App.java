@@ -109,10 +109,11 @@ public class App implements NativeKeyListener
         logger.info("Reading new locale");
         System.out.println(UIManager.getUIText("locale_change_msg"));
         Scanner input = new Scanner(System.in);
-        String localeString = input.nextLine();
+        String inputText = input.nextLine();
+        String localeString = inputText.substring(1); // Removes "t" from the beginning
         UIManager.setLocale(localeString);
         redrawMap();
-        // resumeNativeHook();
+        resumeNativeHook();
     }
 
     private static void endGame()
@@ -152,34 +153,6 @@ public class App implements NativeKeyListener
     @Override
     public void nativeKeyPressed(NativeKeyEvent nativeKeyEvent)
     {
-        if(ignoreGameInput)
-        {
-            // We're in locale input mode
-            if (nativeKeyEvent.getKeyCode() == NativeKeyEvent.VC_ENTER) {
-                // Finished entering locale
-                String localeString = localeInput.toString();
-                UIManager.setLocale(localeString);
-                sim.addMsgToShow(UIManager.getUIText("locale_change_done"));
-                redrawMap();
-                localeInput.setLength(0);
-                ignoreGameInput = false;
-            } else if (nativeKeyEvent.getKeyCode() == NativeKeyEvent.VC_ESCAPE) {
-                // Cancel locale input
-                localeInput.setLength(0);
-                System.out.println("Locale change cancelled");
-                redrawMap();
-                ignoreGameInput = false;
-            } else {
-                // Add character to input
-                char c = getCharFromKeyEvent(nativeKeyEvent);
-                if (c != 0) {
-                    localeInput.append(c);
-                    System.out.println("Entered: " + localeInput.toString());
-                }
-            }
-            return; // Pause game controls, such that user can use the terminal
-        }
-
         switch (nativeKeyEvent.getKeyCode()) {
             case NativeKeyEvent.VC_ESCAPE:
                 endGame();
@@ -214,8 +187,8 @@ public class App implements NativeKeyListener
                 break;
 
             case NativeKeyEvent.VC_T:
-                // pauseNativeHook();
-                //changeLocale();
+                pauseNativeHook();
+                changeLocale();
                 logger.info("Locale change requested");
                 ignoreGameInput = true;
                 break;
@@ -247,17 +220,5 @@ public class App implements NativeKeyListener
         } catch (NativeHookException e) {
             e.printStackTrace();
         }
-    }
-
-    private char getCharFromKeyEvent(NativeKeyEvent e) {
-        // Convert key code to character
-        String keyText = NativeKeyEvent.getKeyText(e.getKeyCode());
-        if (keyText.length() == 1) {
-            char c = keyText.charAt(0);
-            if (Character.isLetterOrDigit(c) || c == '-') {
-                return c;
-            }
-        }
-        return 0;
     }
 }
