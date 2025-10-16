@@ -79,7 +79,7 @@ public class Obstacle implements MapObject
     {
         if(isUnbreakable)
         {
-            sim.addMsgToShow(UITranslator.get("wall_hit"));
+            sim.addMsgToShow(UIManager.getUIText("wall_hit"));
             return false;
         }
 
@@ -110,13 +110,13 @@ public class Obstacle implements MapObject
         if(available)
         {
             inventory.removeAll(removingItems); // Remove the used-items
-            sim.addMsgToShow(UITranslator.get("obstacle_pass"));
-            sim.addMsgToShow(UITranslator.get("items_used_to_obstacle", getRequiredAsString()));
+            sim.addMsgToShow(UIManager.getUIText("obstacle_pass"));
+            sim.addMsgToShow(UIManager.getUIText("items_used_to_obstacle", getRequiredAsString()));
             return true;
         }
         else
         {
-            sim.addMsgToShow(UITranslator.get("obstacle_pass_req", getRequiredAsString()));
+            sim.addMsgToShow(UIManager.getUIText("obstacle_pass_req", getRequiredAsString()));
         }
 
 

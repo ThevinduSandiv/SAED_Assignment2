@@ -1,5 +1,7 @@
 package edu.curtin.saed.assignment2;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,6 +21,7 @@ public class Simulation
 
     private MapObject[][] map;
     private Player player;
+    private LocalDate currentDate;
 
     private List<String> messages;
     private Goal goal;
@@ -26,13 +29,18 @@ public class Simulation
     public Simulation(Runnable simEndMethod)
     {
         this.simEndMethod = simEndMethod;
-
+        this.currentDate = LocalDate.now();
         this.messages = new LinkedList<>();
     }
 
     public Player getPlayer()
     {
         return player;
+    }
+
+    public LocalDate getCurrentDate()
+    {
+        return currentDate;
     }
 
     public void createMap(int h, int w)
@@ -181,7 +189,6 @@ public class Simulation
             sb.append(message);
             sb.append("\n"); // Add new-line after each message
         }
-        messages.clear();
 
         logger.info("Messages to show generated successfully.");
         return sb.toString();
@@ -189,6 +196,8 @@ public class Simulation
 
     public void movePlayer(int stepRow, int stepCol)
     {
+        messages.clear(); //Remove previous messages before the next move
+
         // Position where the player wants to move on to
         int checkingRow = player.getRowPosition() + 1 + stepRow;  // stepY affects rows
         int checkingCol = player.getColPosition() + 1 + stepCol;  // stepX affects columns

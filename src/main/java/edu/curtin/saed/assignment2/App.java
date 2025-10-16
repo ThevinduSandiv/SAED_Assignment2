@@ -8,9 +8,8 @@ import org.jnativehook.keyboard.NativeKeyListener;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.text.ParseException;
+import java.util.Scanner;
 import java.util.logging.Level;
-import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class App implements NativeKeyListener
@@ -18,7 +17,8 @@ public class App implements NativeKeyListener
     private static final Logger logger = Logger.getLogger(App.class.getName());
 
     private static volatile boolean isRunning = true;
-    private static volatile boolean isKeyPressed = false;
+    private static volatile boolean ignoreGameInput = false;
+    private static StringBuilder localeInput = new StringBuilder();
     private static Simulation sim;
 
     public static void main(String[] args)
@@ -34,7 +34,7 @@ public class App implements NativeKeyListener
             }
         }
 
-        UITranslator.setLanguage("es-ES");
+        UIManager.setLocale("en-AU");
         // Setup the key listener first
         App app = new App();
         app.setupKeyListener();
@@ -76,7 +76,8 @@ public class App implements NativeKeyListener
         clearScreen();
         System.out.println(sim.getMessagesToShow());
         System.out.println(sim.getDrawableMap());
-        System.out.println(UITranslator.get("inventory") + ": " + sim.getPlayer().getInventoryAsString());
+        System.out.println(UIManager.getUIText("inventory") + ": " + sim.getPlayer().getInventoryAsString());
+        System.out.println(UIManager.getUIText("date_label") + " " + UIManager.getFormattedDate(sim.getCurrentDate()));
         System.out.println(); // Blank Line
     }
 
@@ -90,11 +91,34 @@ public class App implements NativeKeyListener
 
     }
 
+    private static void changeLocale()
+    {
+        try
+        {
+            while (System.in.available() > 0) {
+                System.in.read();
+            }
+            logger.info("Clearing buffer");
+        }
+        catch (IOException e)
+        {
+            logger.info("Error clearing buffer: " + e.getMessage());
+            // Ignore - buffer might already be clear
+        }
+
+        logger.info("Reading new locale");
+        System.out.println(UIManager.getUIText("locale_change_msg"));
+        Scanner input = new Scanner(System.in);
+        String localeString = input.nextLine();
+        UIManager.setLocale(localeString);
+        redrawMap();
+        // resumeNativeHook();
+    }
+
     private static void endGame()
     {
-        System.out.println(UITranslator.get("exit_msg"));
+        System.out.println(UIManager.getUIText("exit_msg"));
         isRunning = false;
-        isKeyPressed = true;
         try {
             GlobalScreen.unregisterNativeHook();
         } catch (NativeHookException ex) {
@@ -114,7 +138,7 @@ public class App implements NativeKeyListener
             logger.info("Native hook registered successfully.");
         } catch (NativeHookException ex) {
             logger.severe("Failed to register native hook: " + ex.getMessage());
-            System.out.println(UITranslator.get("exit_msg"));
+            System.out.println(UIManager.getUIText("exit_msg"));
             isRunning = false;
         }
     }
@@ -128,13 +152,40 @@ public class App implements NativeKeyListener
     @Override
     public void nativeKeyPressed(NativeKeyEvent nativeKeyEvent)
     {
+        if(ignoreGameInput)
+        {
+            // We're in locale input mode
+            if (nativeKeyEvent.getKeyCode() == NativeKeyEvent.VC_ENTER) {
+                // Finished entering locale
+                String localeString = localeInput.toString();
+                UIManager.setLocale(localeString);
+                sim.addMsgToShow(UIManager.getUIText("locale_change_done"));
+                redrawMap();
+                localeInput.setLength(0);
+                ignoreGameInput = false;
+            } else if (nativeKeyEvent.getKeyCode() == NativeKeyEvent.VC_ESCAPE) {
+                // Cancel locale input
+                localeInput.setLength(0);
+                System.out.println("Locale change cancelled");
+                redrawMap();
+                ignoreGameInput = false;
+            } else {
+                // Add character to input
+                char c = getCharFromKeyEvent(nativeKeyEvent);
+                if (c != 0) {
+                    localeInput.append(c);
+                    System.out.println("Entered: " + localeInput.toString());
+                }
+            }
+            return; // Pause game controls, such that user can use the terminal
+        }
+
         switch (nativeKeyEvent.getKeyCode()) {
             case NativeKeyEvent.VC_ESCAPE:
                 endGame();
                 break;
 
             case NativeKeyEvent.VC_SPACE:
-                isKeyPressed = true;
                 redrawMap();
                 break;
 
@@ -162,9 +213,17 @@ public class App implements NativeKeyListener
                 redrawMap();
                 break;
 
+            case NativeKeyEvent.VC_T:
+                // pauseNativeHook();
+                //changeLocale();
+                logger.info("Locale change requested");
+                ignoreGameInput = true;
+                break;
+
             case NativeKeyEvent.VC_ENTER:
                 System.out.println("Enter pressed!");
                 break;
+
         }
     }
 
@@ -172,5 +231,33 @@ public class App implements NativeKeyListener
     public void nativeKeyReleased(NativeKeyEvent nativeKeyEvent)
     {
         // Do Nothing
+    }
+
+    private static void pauseNativeHook() {
+        try {
+            GlobalScreen.unregisterNativeHook();
+        } catch (NativeHookException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static void resumeNativeHook() {
+        try {
+            GlobalScreen.registerNativeHook();
+        } catch (NativeHookException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private char getCharFromKeyEvent(NativeKeyEvent e) {
+        // Convert key code to character
+        String keyText = NativeKeyEvent.getKeyText(e.getKeyCode());
+        if (keyText.length() == 1) {
+            char c = keyText.charAt(0);
+            if (Character.isLetterOrDigit(c) || c == '-') {
+                return c;
+            }
+        }
+        return 0;
     }
 }
