@@ -4,9 +4,12 @@ import edu.curtin.saed.gameapis.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class GameExtensionPoint implements PluginRegister, GameAPI
 {
+    private static final Logger logger = Logger.getLogger(GameExtensionPoint.class.getName());
+
     private static GameExtensionPoint instance;
 
     private final List<MoveListener> moveListeners;
@@ -46,6 +49,7 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
     @Override
     public void registerCollectListener(CollectListener listener)
     {
+        logger.info("Registering Collect Listener");
         collectListeners.add(listener);
     }
 
@@ -82,9 +86,11 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
 
     public void onCollect(String itemName, int row, int col)
     {
+        logger.info("Calling OnCollect Method");
         for(CollectListener l : collectListeners)
         {
             l.onCollect(itemName, row, col);
+            logger.info("Calling the listener");
         }
     }
 
@@ -160,6 +166,12 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
             }
         }
         return collectablePositions;
+    }
+
+    @Override
+    public int[] getGoalPos()
+    {
+        return new int[]{sim.getGoal().getRowPosition(), sim.getGoal().getColPosition()};
     }
 
     @Override

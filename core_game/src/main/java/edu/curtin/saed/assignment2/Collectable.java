@@ -77,6 +77,7 @@ public class Collectable implements MapObject
     public boolean performAction(Player player, Simulation sim)
     {
         player.getInventory().add(this);
+        GameExtensionPoint.getInstance().onCollect(name, row, col);
         sim.addMsgToShow(UIManager.getUIText("collected_item", name));
         sim.addMsgToShow(UIManager.getUIText("msg_label") + ": " + msg);
         return true;

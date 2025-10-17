@@ -14,6 +14,8 @@ public interface GameAPI
 
     List<int[]> getAllCollectablePos();
 
+    int[] getGoalPos();
+
     void makePosVisible(int row, int col);
 
     String getInventoryString();

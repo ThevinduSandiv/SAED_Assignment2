@@ -20,6 +20,7 @@ public class App implements NativeKeyListener
     private static volatile boolean ignoreGameInput = false;
     private static StringBuilder localeInput = new StringBuilder();
     private static Simulation sim;
+    private static Loader loader;
 
     public static void main(String[] args)
     {
@@ -43,11 +44,14 @@ public class App implements NativeKeyListener
         //clearScreen();
 
         sim = new Simulation(App::endGame);
-
         readFile(sim, in);
-
-        //sim.testMapGenerator();
+        sim.testMapGenerator();
         sim.addWalls();
+
+        GameExtensionPoint.getInstance().setSim(sim);
+
+        loader = new Loader();
+        loader.loadPlugin();
 
         redrawMap();
         while(isRunning)

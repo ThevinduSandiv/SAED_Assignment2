@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/core_game" />
             <option value="$PROJECT_DIR$/game_apis" />
+            <option value="$PROJECT_DIR$/game_plugins" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -2,3 +2,4 @@ rootProject.name = 'saed2025_assignment2_start_javafx'
 
 include 'core_game'
 include 'game_apis'
+include 'game_plugins'

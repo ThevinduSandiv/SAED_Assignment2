@@ -1,0 +1,17 @@
+plugins {
+    id "java"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':game_apis')
+}
+
+
+java {
+    sourceCompatibility = 17
+    targetCompatibility = 17
+}

@@ -1,50 +1,40 @@
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.UIManager setLocale
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.UIManager setLocale
 INFO: Setting locale to en-AU
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.App setupKeyListener
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.App setupKeyListener
 INFO: Native hook registered successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.App main
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.App main
 INFO: Starting Simulation
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation createMap
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation createMap
 INFO: Map created successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addPlayer
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addPlayer
 INFO: Player added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addGoal
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addGoal
 INFO: Goal added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addObstacles
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addObstacles
 INFO: Obstacles added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.App readFile
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.App readFile
 INFO: Input valid
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Loader loadPlugin
+SEVERE: Plugin class instantiation failed: edu.curtin.gameplugins.Reveal.<init>(edu.curtin.saed.assignment2.GameExtensionPoint)
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
 INFO: Messages to show generated successfully.
-Oct 17, 2025 12:31:47 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+Oct 17, 2025 11:38:10 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
 INFO: Drawable map generated successfully.
-Oct 17, 2025 12:31:50 AM edu.curtin.saed.assignment2.App changeLocale
-INFO: Clearing buffer
-Oct 17, 2025 12:31:50 AM edu.curtin.saed.assignment2.App changeLocale
-INFO: Reading new locale
-Oct 17, 2025 12:31:56 AM edu.curtin.saed.assignment2.UIManager setLocale
-INFO: Setting locale to es-ES
-Oct 17, 2025 12:31:56 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
-INFO: Messages to show generated successfully.
-Oct 17, 2025 12:31:56 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
-INFO: Drawable map generated successfully.
-Oct 17, 2025 12:31:56 AM edu.curtin.saed.assignment2.App nativeKeyPressed
-INFO: Locale change requested
