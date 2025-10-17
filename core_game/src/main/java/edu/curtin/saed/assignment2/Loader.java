@@ -20,6 +20,33 @@ public class Loader
 
         try
         {
+            Object pluginInstance = Class.forName("edu.curtin.gameplugins.Prize")
+                    .getDeclaredConstructor(GameAPI.class)
+                    .newInstance(GameExtensionPoint.getInstance());
+
+            gameExtensionPoint.registerMoveListener((MoveListener) pluginInstance);
+            gameExtensionPoint.registerCollectListener((CollectListener) pluginInstance);
+
+        }
+        catch (ClassNotFoundException e)
+        {
+            logger.severe("Plugin class not found: " + e.getMessage());
+        }
+        catch (Exception e)
+        {
+            logger.severe("Plugin class instantiation failed: " + e.getMessage());
+        }
+
+    }
+
+
+
+    public void loadPlugin2() // TODO: change to reflection later
+    {
+        GameExtensionPoint gameExtensionPoint = GameExtensionPoint.getInstance();
+
+        try
+        {
             // Fully qualified class name of the plugin
             Class<?> clazz = Class.forName("edu.curtin.gameplugins.Penalty");
 
@@ -42,7 +69,7 @@ public class Loader
     }
 
 
-    public void loadPlugin2() // TODO: change to reflection later
+    public void loadPlugin1() // TODO: change to reflection later
     {
         GameExtensionPoint gameExtensionPoint = GameExtensionPoint.getInstance();
 

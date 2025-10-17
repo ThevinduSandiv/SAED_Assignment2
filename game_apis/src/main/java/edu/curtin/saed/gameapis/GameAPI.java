@@ -5,6 +5,11 @@ import java.util.List;
 public interface GameAPI
 {
     int[] getPlayerPos();
+
+    void addToInventory(String name, String msg, String icon);
+
+    void removeFromInventory(String name);
+
     void setPlayerPos(int row, int col);
 
     void addObstacle(int row, int col, String icon, boolean isVisible, boolean unbreakable);

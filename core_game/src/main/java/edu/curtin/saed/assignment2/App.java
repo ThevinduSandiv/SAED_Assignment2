@@ -40,6 +40,7 @@ public class App implements NativeKeyListener
         App app = new App();
         app.setupKeyListener();
 
+        int unusedVariable = 42;
         logger.info("Starting Simulation");
         //clearScreen();
 

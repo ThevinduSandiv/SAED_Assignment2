@@ -17,6 +17,8 @@ public class Reveal implements CollectListener
     {
         if(itemName.equals("map")) // TODO use unicode later
         {
+            api.removeFromInventory(itemName);
+
             // Reveal the goal
             int[] goalPos = api.getGoalPos();
             api.makePosVisible(goalPos[0], goalPos[1]);

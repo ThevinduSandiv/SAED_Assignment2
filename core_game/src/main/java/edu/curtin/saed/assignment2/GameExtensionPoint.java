@@ -110,6 +110,28 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
     }
 
     @Override
+    public void addToInventory(String name, String msg, String icon)
+    {
+        sim.getPlayer().getInventory().add(new Collectable(name, 0, 0, msg, false, icon)); // Position is fake
+    }
+
+    @Override
+    public void removeFromInventory(String name)
+    {
+        List<Collectable> inventory = sim.getPlayer().getInventory();
+
+        // Removes the first occurrence of the item
+        for(Collectable c : inventory)
+        {
+            if(c.getName().equals(name)) //TODO: unicode
+            {
+                inventory.remove(c);
+                break;
+            }
+        }
+    }
+
+    @Override
     public void setPlayerPos(int row, int col)
     {
         sim.getPlayer().setRow(row).setCol(col);
