@@ -104,6 +104,12 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
 
     // React
     @Override
+    public int[] getPlayerPos()
+    {
+        return new int[]{sim.getPlayer().getRowPosition(), sim.getPlayer().getColPosition()};
+    }
+
+    @Override
     public void setPlayerPos(int row, int col)
     {
         sim.getPlayer().setRow(row).setCol(col);
@@ -111,9 +117,9 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
     }
 
     @Override
-    public void addObstacle(int row, int col, String icon, boolean isVisible)
+    public void addObstacle(int row, int col, String icon, boolean isVisible, boolean unbreakable)
     {
-        Obstacle obstacle = new Obstacle(row, col, icon, isVisible, false);
+        Obstacle obstacle = new Obstacle(row, col, icon, isVisible, unbreakable);
         sim.addObstacles(new ArrayList<>()
         {{
             add(obstacle);
@@ -140,9 +146,9 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
             for (int col = 0; col < map[row].length; col++)
             {
                 MapObject obj = map[row][col];
-                if (obj.isSolid())
+                if (obj instanceof Obstacle)
                 {
-                    obstaclePositions.add(new int[]{row, col});
+                    obstaclePositions.add(new int[]{obj.getRowPosition(), obj.getColPosition()});
                 }
             }
         }
@@ -159,9 +165,9 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
             for (int col = 0; col < map[row].length; col++)
             {
                 MapObject obj = map[row][col];
-                if (!obj.isSolid())
+                if (obj instanceof Collectable)
                 {
-                    collectablePositions.add(new int[]{row, col});
+                    collectablePositions.add(new int[]{obj.getRowPosition(), obj.getColPosition()});
                 }
             }
         }
@@ -178,7 +184,7 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
     public void makePosVisible(int row, int col)
     {
         MapObject[][] map = sim.getMap();
-        map[row][col].makeVisible();
+        map[row + Simulation.offset][col + Simulation.offset].makeVisible();
     }
 
     @Override

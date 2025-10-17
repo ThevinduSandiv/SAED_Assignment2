@@ -11,8 +11,8 @@ public class Simulation
 {
     private static final Logger logger = Logger.getLogger(Simulation.class.getName());
 
-    private final boolean CHEAT = true;
-    private final int offset = 1;
+    private final boolean CHEAT = false;
+    public final static int offset = 1;
 
     private final Runnable simEndMethod;
 
@@ -346,7 +346,7 @@ public class Simulation
     @Deprecated
     public void testMapGenerator()
     {
-        map[5][5] = new Collectable("map", 5, 5, "Reveal the Map!", true, "M");
+        map[5][1] = new Collectable("map", 4, 0, "Reveal the Map!", true, "M");
 
 
 //        int offset = 1; // for border walls

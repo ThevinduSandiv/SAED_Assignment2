@@ -57,6 +57,7 @@ public class Path implements MapObject
     @Override
     public boolean performAction(Player player, Simulation sim)
     {
+        GameExtensionPoint.getInstance().onMove(player.getRowPosition(), player.getColPosition());
         return true;
     }
 }

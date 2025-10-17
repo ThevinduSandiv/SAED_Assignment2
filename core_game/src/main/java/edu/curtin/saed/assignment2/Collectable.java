@@ -80,6 +80,8 @@ public class Collectable implements MapObject
         GameExtensionPoint.getInstance().onCollect(name, row, col);
         sim.addMsgToShow(UIManager.getUIText("collected_item", name));
         sim.addMsgToShow(UIManager.getUIText("msg_label") + ": " + msg);
+        GameExtensionPoint.getInstance().onCollect(name, row, col);
+        GameExtensionPoint.getInstance().onMove(row, col);
         return true;
     }
 }

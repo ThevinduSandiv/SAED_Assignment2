@@ -80,6 +80,7 @@ public class Obstacle implements MapObject
         if(isUnbreakable)
         {
             sim.addMsgToShow(UIManager.getUIText("wall_hit"));
+            GameExtensionPoint.getInstance().onMoveBlocked();
             return false;
         }
 
@@ -112,6 +113,7 @@ public class Obstacle implements MapObject
             inventory.removeAll(removingItems); // Remove the used-items
             sim.addMsgToShow(UIManager.getUIText("obstacle_pass"));
             sim.addMsgToShow(UIManager.getUIText("items_used_to_obstacle", getRequiredAsString()));
+            GameExtensionPoint.getInstance().onObstacleTraverse();
             return true;
         }
         else
@@ -119,7 +121,7 @@ public class Obstacle implements MapObject
             sim.addMsgToShow(UIManager.getUIText("obstacle_pass_req", getRequiredAsString()));
         }
 
-
+        GameExtensionPoint.getInstance().onMoveBlocked();
         return false;
     }
 

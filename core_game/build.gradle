@@ -18,9 +18,7 @@ application {
 dependencies {
     implementation 'com.1stleg:jnativehook:2.1.0'
     implementation project(':game_apis')
-
     runtimeOnly project(':game_plugins')
-
 }
 
 javacc {

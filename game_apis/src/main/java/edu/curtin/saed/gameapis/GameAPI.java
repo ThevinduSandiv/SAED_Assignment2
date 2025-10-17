@@ -4,9 +4,10 @@ import java.util.List;
 
 public interface GameAPI
 {
+    int[] getPlayerPos();
     void setPlayerPos(int row, int col);
 
-    void addObstacle(int row, int col, String icon, boolean isVisible);
+    void addObstacle(int row, int col, String icon, boolean isVisible, boolean unbreakable);
 
     void addCollectable(String name, int row, int col, String msg, String icon);
 
