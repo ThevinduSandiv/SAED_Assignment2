@@ -43,6 +43,11 @@ public class Simulation
         return currentDate;
     }
 
+    public MapObject[][] getMap()
+    {
+        return map;
+    }
+
     public void createMap(int h, int w)
     {
         gridH = h;
@@ -114,6 +119,42 @@ public class Simulation
 
             // Right border (column gridW+1)
             map[row + offset][gridW + 1] = new Obstacle(row, gridW + 1, "#", true, true);
+        }
+
+        // Adding Player
+        int r1 = player.getRowPosition() + offset;
+        int c1 = player.getColPosition() + offset;
+        map[r1][c1] = player;
+
+        // Adding Goal
+        int r2 = goal.getRowPosition() + offset;
+        int c2 = goal.getColPosition() + offset;
+        map[r2][c2] = goal;
+    }
+
+    public void refreshMap()
+    {
+        for (int row = 0; row < gridH + 2; row++)
+        {
+            for(int col = 0; col < gridW + 2; col++)
+            {
+                MapObject obj = map[row][col];
+
+                // chek whether row col in the object is indeed correct
+                if (obj != null)
+                {
+                    int objRow = obj.getRowPosition();
+                    int objCol = obj.getColPosition();
+                    boolean visibility = obj.isVisible();
+
+                    if (objRow != row || objCol != col)
+                    {
+                        logger.warning("Mismatch at map[" + row + "][" + col + "]: "
+                                + "Object says (" + objRow + ", " + objCol + ")");
+                        map[row][col] = new Path(visibility); // Replace it with a path
+                    }
+                }
+            }
         }
 
         // Adding Player

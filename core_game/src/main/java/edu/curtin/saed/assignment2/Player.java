@@ -23,6 +23,18 @@ public class Player implements MapObject
         this.isVisible = true;
     }
 
+    public Player setRow(int row)
+    {
+        this.row = row;
+        return this;
+    }
+
+    public Player setCol(int col)
+    {
+        this.col = col;
+        return this;
+    }
+
     public void move(int stepRow, int stepCol)
     {
         row += stepRow;

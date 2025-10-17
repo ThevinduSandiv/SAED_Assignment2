@@ -1,0 +1,177 @@
+package edu.curtin.saed.assignment2;
+
+import edu.curtin.saed.gameapis.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class GameExtensionPoint implements PluginRegister, GameAPI
+{
+    private static GameExtensionPoint instance;
+
+    private final List<MoveListener> moveListeners;
+    private final List<CollectListener> collectListeners;
+    private final List<MenuListener> menuListeners;
+    private Simulation sim;
+
+
+    public static GameExtensionPoint getInstance()
+    {
+        if(instance == null)
+        {
+            instance = new GameExtensionPoint();
+        }
+        return instance;
+    }
+
+    private GameExtensionPoint()
+    {
+        this.moveListeners = new ArrayList<>();
+        this.collectListeners = new ArrayList<>();
+        this.menuListeners = new ArrayList<>();
+    }
+
+    public void setSim(Simulation sim)
+    {
+        this.sim = sim;
+    }
+
+    // Registration
+    @Override
+    public void registerMoveListener(MoveListener listener)
+    {
+        moveListeners.add(listener);
+    }
+
+    @Override
+    public void registerCollectListener(CollectListener listener)
+    {
+        collectListeners.add(listener);
+    }
+
+    @Override
+    public void registerMenuListener(MenuListener listener)
+    {
+        menuListeners.add(listener);
+    }
+
+    // Notify
+    public void onMove(int row, int col)
+    {
+        for(MoveListener l : moveListeners)
+        {
+            l.onMove(row, col);
+        }
+    }
+
+    public void onMoveBlocked()
+    {
+        for(MoveListener l : moveListeners)
+        {
+            l.onMoveBlocked();
+        }
+    }
+
+    public void onObstacleTraverse()
+    {
+        for(MoveListener l : moveListeners)
+        {
+            l.onObstacleTraverse();
+        }
+    }
+
+    public void onCollect(String itemName, int row, int col)
+    {
+        for(CollectListener l : collectListeners)
+        {
+            l.onCollect(itemName, row, col);
+        }
+    }
+
+    public void onMenuOptionSelected(char option)
+    {
+        for(MenuListener l : menuListeners)
+        {
+            l.onMenuOptionSelected(option);
+        }
+    }
+
+    // React
+    @Override
+    public void setPlayerPos(int row, int col)
+    {
+        sim.getPlayer().setRow(row).setCol(col);
+        sim.refreshMap();
+    }
+
+    @Override
+    public void addObstacle(int row, int col, String icon, boolean isVisible)
+    {
+        Obstacle obstacle = new Obstacle(row, col, icon, isVisible, false);
+        sim.addObstacles(new ArrayList<>()
+        {{
+            add(obstacle);
+        }});
+    }
+
+    @Override
+    public void addCollectable(String name, int row, int col, String msg, String icon)
+    {
+        Collectable collectable = new Collectable(name, row, col, msg, true, icon);
+        sim.addCollectables(new ArrayList<>()
+        {{
+            add(collectable);
+        }});
+    }
+
+    @Override
+    public List<int[]> getAllObstaclePos()
+    {
+        MapObject[][] map = sim.getMap();
+        List<int[]> obstaclePositions = new ArrayList<>();
+        for (int row = 0; row < map.length; row++)
+        {
+            for (int col = 0; col < map[row].length; col++)
+            {
+                MapObject obj = map[row][col];
+                if (obj.isSolid())
+                {
+                    obstaclePositions.add(new int[]{row, col});
+                }
+            }
+        }
+        return obstaclePositions;
+    }
+
+    @Override
+    public List<int[]> getAllCollectablePos()
+    {
+        MapObject[][] map = sim.getMap();
+        List<int[]> collectablePositions = new ArrayList<>();
+        for (int row = 0; row < map.length; row++)
+        {
+            for (int col = 0; col < map[row].length; col++)
+            {
+                MapObject obj = map[row][col];
+                if (!obj.isSolid())
+                {
+                    collectablePositions.add(new int[]{row, col});
+                }
+            }
+        }
+        return collectablePositions;
+    }
+
+    @Override
+    public void makePosVisible(int row, int col)
+    {
+        MapObject[][] map = sim.getMap();
+        map[row][col].makeVisible();
+    }
+
+    @Override
+    public String getInventoryString()
+    {
+        return sim.getPlayer().getInventoryAsString();
+    }
+}
