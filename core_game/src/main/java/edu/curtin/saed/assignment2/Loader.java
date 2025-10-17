@@ -30,11 +30,11 @@ public class Loader
         }
         catch (ClassNotFoundException e)
         {
-            logger.severe("Plugin class not found: " + e.getMessage());
+            logger.severe(() -> "Plugin class not found: " + e.getMessage());
         }
         catch (Exception e)
         {
-            logger.severe("Plugin class instantiation failed: " + e.getMessage());
+            logger.severe(() -> "Plugin class instantiation failed: " + e.getMessage());
         }
 
     }
@@ -54,16 +54,16 @@ public class Loader
                     .getDeclaredConstructor(GameAPI.class)
                     .newInstance(GameExtensionPoint.getInstance());
             gameExtensionPoint.registerMoveListener(pluginInstance);
-            logger.info("Plugin loaded: " + clazz.getName());
+            logger.info(() -> "Plugin loaded: " + clazz.getName());
 
         }
         catch (ClassNotFoundException e)
         {
-            logger.severe("Plugin class not found: " + e.getMessage());
+            logger.severe(() -> "Plugin class not found: " + e.getMessage());
         }
         catch (Exception e)
         {
-            logger.severe("Plugin class instantiation failed: " + e.getMessage());
+            logger.severe(() -> "Plugin class instantiation failed: " + e.getMessage());
         }
 
     }
@@ -87,11 +87,11 @@ public class Loader
         }
         catch (ClassNotFoundException e)
         {
-            logger.severe("Plugin class not found: " + e.getMessage());
+            logger.severe(() -> "Plugin class not found: " + e.getMessage());
         }
         catch (Exception e)
         {
-            logger.severe("Plugin class instantiation failed: " + e.getMessage());
+            logger.severe(() -> "Plugin class instantiation failed: " + e.getMessage());
         }
 
     }

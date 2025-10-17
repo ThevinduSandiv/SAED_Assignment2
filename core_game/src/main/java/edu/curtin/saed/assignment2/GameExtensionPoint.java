@@ -163,12 +163,11 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
     {
         MapObject[][] map = sim.getMap();
         List<int[]> obstaclePositions = new ArrayList<>();
-        for (int row = 0; row < map.length; row++)
+        for(MapObject[] mapObjects : map)
         {
-            for (int col = 0; col < map[row].length; col++)
+            for(MapObject obj : mapObjects)
             {
-                MapObject obj = map[row][col];
-                if (obj instanceof Obstacle)
+                if(obj instanceof Obstacle)
                 {
                     obstaclePositions.add(new int[]{obj.getRowPosition(), obj.getColPosition()});
                 }
@@ -182,12 +181,11 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
     {
         MapObject[][] map = sim.getMap();
         List<int[]> collectablePositions = new ArrayList<>();
-        for (int row = 0; row < map.length; row++)
+        for(MapObject[] mapObjects : map)
         {
-            for (int col = 0; col < map[row].length; col++)
+            for(MapObject obj : mapObjects)
             {
-                MapObject obj = map[row][col];
-                if (obj instanceof Collectable)
+                if(obj instanceof Collectable)
                 {
                     collectablePositions.add(new int[]{obj.getRowPosition(), obj.getColPosition()});
                 }

@@ -70,7 +70,10 @@ public class Penalty implements MoveListener
                             found = true;
                         }
                     }
-                    if(!found) available.add(pos);
+                    if(!found)
+                    {
+                        available.add(pos);
+                    }
                 }
 
                 if(!available.isEmpty()) {

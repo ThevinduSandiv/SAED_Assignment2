@@ -154,7 +154,7 @@ public class Simulation
 
                     if (objRow != row || objCol != col)
                     {
-                        logger.warning("Mismatch at map[" + row + "][" + col + "]: "
+                        logger.warning(() -> "Mismatch: "
                                 + "Object says (" + objRow + ", " + objCol + ")");
                         map[row][col] = new Path(visibility); // Replace it with a path
                     }
@@ -252,8 +252,8 @@ public class Simulation
 
         MapObject target = map[checkingRow][checkingCol];
 
-        logger.info(String.format("Player Pos: at row:%d, col:%d", player.getRowPosition() + 1, player.getColPosition() + 1));
-        logger.info(String.format("Target Pos: at row:%d, col:%d", checkingRow, checkingCol));
+        logger.info(() -> String.format("Player Pos: at row:%d, col:%d", player.getRowPosition() + 1, player.getColPosition() + 1));
+        logger.info(() -> String.format("Target Pos: at row:%d, col:%d", checkingRow, checkingCol));
 
         if(target == null)
         {

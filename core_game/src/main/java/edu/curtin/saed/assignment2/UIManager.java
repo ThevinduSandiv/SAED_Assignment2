@@ -21,12 +21,12 @@ public class UIManager
         try
         {
             locale = Locale.forLanguageTag(localeString);
-            logger.info("Setting locale to " + localeString);
+            logger.info(() -> "Setting locale to " + localeString);
             bundle = ResourceBundle.getBundle("bundle", locale);
         }
         catch (Exception e)
         {
-            logger.warning("Unavailable locale: " + localeString);
+            logger.warning(() -> "Unavailable locale: " + localeString);
             bundle = ResourceBundle.getBundle("bundle");
         }
     }

@@ -54,13 +54,13 @@ public class Player implements MapObject
         sb.append("[");
         for(Collectable c : inventory)
         {
-            if(!first)
+            if(first)
             {
-                sb.append(", ");
+                first = false;
             }
             else
             {
-                first = false;
+                sb.append(", ");
             }
             sb.append("\"").append(c.getName()).append("\"");
         }

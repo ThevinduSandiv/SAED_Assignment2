@@ -17,20 +17,21 @@ public class App implements NativeKeyListener
     private static final Logger logger = Logger.getLogger(App.class.getName());
 
     private static volatile boolean isRunning = true;
-    private static volatile boolean ignoreGameInput = false;
-    private static StringBuilder localeInput = new StringBuilder();
     private static Simulation sim;
-    private static Loader loader;
+    private static InputStream in;
 
     public static void main(String[] args)
     {
 
-        InputStream in = System.in;
+        in = System.in;
         if (args.length > 0) {
-            try {
+            try
+            {
                 in = new FileInputStream(args[0]);
-            } catch (Exception e) {
-                logger.warning("Cannot open file: " + args[0]);
+            }
+            catch
+            (IOException e) {
+                logger.warning(() -> "Cannot open file: " + args[0]);
                 return;
             }
         }
@@ -40,7 +41,6 @@ public class App implements NativeKeyListener
         App app = new App();
         app.setupKeyListener();
 
-        int unusedVariable = 42;
         logger.info("Starting Simulation");
         //clearScreen();
 
@@ -51,7 +51,7 @@ public class App implements NativeKeyListener
 
         GameExtensionPoint.getInstance().setSim(sim);
 
-        loader = new Loader();
+        Loader loader = new Loader();
         loader.loadPlugin();
 
         redrawMap();
@@ -71,7 +71,7 @@ public class App implements NativeKeyListener
         catch(edu.curtin.saed.assignment2.ParseException e)
         {
            logger.severe("Parsing error!");
-           logger.severe(e.getMessage());
+           logger.severe(() -> e.getMessage());
         }
     }
 
@@ -107,7 +107,7 @@ public class App implements NativeKeyListener
         }
         catch (IOException e)
         {
-            logger.info("Error clearing buffer: " + e.getMessage());
+            logger.info(() -> "Error clearing buffer: " + e.getMessage());
             // Ignore - buffer might already be clear
         }
 
@@ -116,6 +116,7 @@ public class App implements NativeKeyListener
         Scanner input = new Scanner(System.in);
         String inputText = input.nextLine();
         String localeString = inputText.substring(1); // Removes "t" from the beginning
+        input.close();
         UIManager.setLocale(localeString);
         redrawMap();
         resumeNativeHook();
@@ -125,10 +126,20 @@ public class App implements NativeKeyListener
     {
         System.out.println(UIManager.getUIText("exit_msg"));
         isRunning = false;
-        try {
+        try
+        {
+            in.close();
+        } catch(IOException e)
+        {
+            logger.warning(() -> "Failed to close input stream: " + e.getMessage());
+        }
+        try
+        {
             GlobalScreen.unregisterNativeHook();
-        } catch (NativeHookException ex) {
-            ex.printStackTrace();
+        }
+        catch (NativeHookException ex)
+        {
+            logger.severe(() -> "Failed to unregister native hook: " + ex.getMessage());
         }
     }
 
@@ -138,12 +149,15 @@ public class App implements NativeKeyListener
         l.setLevel(Level.OFF);
         l.setUseParentHandlers(false);
 
-        try {
+        try
+        {
             GlobalScreen.registerNativeHook();
             GlobalScreen.addNativeKeyListener(this);
             logger.info("Native hook registered successfully.");
-        } catch (NativeHookException ex) {
-            logger.severe("Failed to register native hook: " + ex.getMessage());
+        }
+        catch (NativeHookException ex)
+        {
+            logger.severe(() -> "Failed to register native hook: " + ex.getMessage());
             System.out.println(UIManager.getUIText("exit_msg"));
             isRunning = false;
         }
@@ -195,7 +209,6 @@ public class App implements NativeKeyListener
                 pauseNativeHook();
                 changeLocale();
                 logger.info("Locale change requested");
-                ignoreGameInput = true;
                 break;
 
             case NativeKeyEvent.VC_ENTER:
@@ -212,18 +225,23 @@ public class App implements NativeKeyListener
     }
 
     private static void pauseNativeHook() {
-        try {
+        try
+        {
             GlobalScreen.unregisterNativeHook();
-        } catch (NativeHookException e) {
-            e.printStackTrace();
+        } catch (NativeHookException e)
+        {
+            logger.severe(() -> "Failed to unregister native hook: " + e.getMessage());
         }
     }
 
     private static void resumeNativeHook() {
-        try {
+        try
+        {
             GlobalScreen.registerNativeHook();
-        } catch (NativeHookException e) {
-            e.printStackTrace();
+        }
+        catch (NativeHookException e)
+        {
+            logger.severe(() -> "Failed to register native hook: " + e.getMessage());
         }
     }
 }

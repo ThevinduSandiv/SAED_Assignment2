@@ -16,9 +16,9 @@ run {
     enabled = false // Doesnt try to run itself
 }
 
-
 allprojects {
     apply plugin: "java"
+    apply plugin: "pmd"
 
     repositories {
         mavenCentral()

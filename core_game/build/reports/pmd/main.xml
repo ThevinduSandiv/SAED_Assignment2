@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.15.0" timestamp="2025-10-17T23:43:38.786">
+<file name="C:\Users\thevi\Desktop\Software ArchitectureProjects\Assignment 2\2025_assignment2\core_game\src\main\java\edu\curtin\saed\assignment2\App.java">
+<violation beginline="58" endline="59" begincolumn="9" endcolumn="11" rule="EmptyControlStatement" ruleset="Code Style" package="edu.curtin.saed.assignment2" class="App" method="main" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_codestyle.html#emptycontrolstatement" priority="3">
+Empty while statement
+</violation>
+<violation beginline="71" endline="71" begincolumn="15" endcolumn="57" rule="UnnecessaryFullyQualifiedName" ruleset="Code Style" package="edu.curtin.saed.assignment2" class="App" method="readFile" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_codestyle.html#unnecessaryfullyqualifiedname" priority="4">
+Unnecessary qualifier 'edu.curtin.saed.assignment2': 'ParseException' is already in scope because it is declared in the same package
+</violation>
+<violation beginline="116" endline="116" begincolumn="17" endcolumn="22" rule="CloseResource" ruleset="Error Prone" package="edu.curtin.saed.assignment2" class="App" method="changeLocale" variable="input" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this Scanner object are closed after use
+</violation>
+<violation beginline="175" endline="218" begincolumn="9" endcolumn="10" rule="NonExhaustiveSwitch" ruleset="Best Practices" package="edu.curtin.saed.assignment2" class="App" method="nativeKeyPressed" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_bestpractices.html#nonexhaustiveswitch" priority="3">
+Switch statements or expressions should be exhaustive, add a default case (or missing enum branches)
+</violation>
+</file>
+<file name="C:\Users\thevi\Desktop\Software ArchitectureProjects\Assignment 2\2025_assignment2\core_game\src\main\java\edu\curtin\saed\assignment2\GameExtensionPoint.java">
+<violation beginline="23" endline="26" begincolumn="9" endcolumn="10" rule="NonThreadSafeSingleton" ruleset="Multithreading" package="edu.curtin.saed.assignment2" class="GameExtensionPoint" method="getInstance" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_multithreading.html#nonthreadsafesingleton" priority="3">
+Singleton is not thread safe
+</violation>
+</file>
+<file name="C:\Users\thevi\Desktop\Software ArchitectureProjects\Assignment 2\2025_assignment2\core_game\src\main\java\edu\curtin\saed\assignment2\Loader.java">
+<violation beginline="35" endline="35" begincolumn="16" endcolumn="25" rule="AvoidCatchingGenericException" ruleset="Design" package="edu.curtin.saed.assignment2" class="Loader" method="loadPlugin" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="64" endline="64" begincolumn="16" endcolumn="25" rule="AvoidCatchingGenericException" ruleset="Design" package="edu.curtin.saed.assignment2" class="Loader" method="loadPlugin2" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="85" endline="85" begincolumn="13" endcolumn="62" rule="GuardLogStatement" ruleset="Best Practices" package="edu.curtin.saed.assignment2" class="Loader" method="loadPlugin1" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Use lambda expressions (() -&gt; ...) when building a log message from variable values.
+</violation>
+<violation beginline="92" endline="92" begincolumn="16" endcolumn="25" rule="AvoidCatchingGenericException" ruleset="Design" package="edu.curtin.saed.assignment2" class="Loader" method="loadPlugin1" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+</file>
+<file name="C:\Users\thevi\Desktop\Software ArchitectureProjects\Assignment 2\2025_assignment2\core_game\src\main\java\edu\curtin\saed\assignment2\Player.java">
+<violation beginline="42" endline="42" begincolumn="9" endcolumn="97" rule="GuardLogStatement" ruleset="Best Practices" package="edu.curtin.saed.assignment2" class="Player" method="move" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_bestpractices.html#guardlogstatement" priority="2">
+Use lambda expressions (() -&gt; ...) when building a log message from variable values.
+</violation>
+</file>
+<file name="C:\Users\thevi\Desktop\Software ArchitectureProjects\Assignment 2\2025_assignment2\core_game\src\main\java\edu\curtin\saed\assignment2\Simulation.java">
+<violation beginline="14" endline="14" begincolumn="27" endcolumn="32" rule="FieldNamingConventions" ruleset="Code Style" package="edu.curtin.saed.assignment2" class="Simulation" variable="CHEAT" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'CHEAT' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="14" endline="14" begincolumn="27" endcolumn="32" rule="FinalFieldCouldBeStatic" ruleset="Design" package="edu.curtin.saed.assignment2" class="Simulation" variable="CHEAT" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_design.html#finalfieldcouldbestatic" priority="3">
+This final field could be made static
+</violation>
+<violation beginline="15" endline="15" begincolumn="29" endcolumn="35" rule="FieldNamingConventions" ruleset="Code Style" package="edu.curtin.saed.assignment2" class="Simulation" variable="offset" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The public constant name 'offset' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="178" endline="184" begincolumn="9" endcolumn="10" rule="ForLoopCanBeForeach" ruleset="Best Practices" package="edu.curtin.saed.assignment2" class="Simulation" method="initializeMapWithPaths" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_bestpractices.html#forloopcanbeforeach" priority="3">
+This for loop can be replaced by a foreach loop
+</violation>
+</file>
+<file name="C:\Users\thevi\Desktop\Software ArchitectureProjects\Assignment 2\2025_assignment2\core_game\src\main\java\edu\curtin\saed\assignment2\UIManager.java">
+<violation beginline="27" endline="27" begincolumn="16" endcolumn="25" rule="AvoidCatchingGenericException" ruleset="Design" package="edu.curtin.saed.assignment2" class="UIManager" method="setLocale" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="39" endline="39" begincolumn="16" endcolumn="25" rule="AvoidCatchingGenericException" ruleset="Design" package="edu.curtin.saed.assignment2" class="UIManager" method="getUIText" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="52" endline="52" begincolumn="16" endcolumn="25" rule="AvoidCatchingGenericException" ruleset="Design" package="edu.curtin.saed.assignment2" class="UIManager" method="getUIText" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.15.0/pmd_rules_java_design.html#avoidcatchinggenericexception" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+</file>
+</pmd>
