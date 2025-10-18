@@ -1,9 +1,9 @@
 package edu.curtin.saed.assignment2;
 
-
-import edu.curtin.saed.gameapis.CollectListener;
 import edu.curtin.saed.gameapis.GameAPI;
 import edu.curtin.saed.gameapis.MoveListener;
+import edu.curtin.saed.gameapis.CollectListener;
+import edu.curtin.saed.gameapis.MenuListener;
 
 import java.util.logging.Logger;
 
@@ -14,23 +14,37 @@ public class Loader
     {
     }
 
-    public void loadPlugin() // TODO: change to reflection later
+    public void loadPlugin(String pluginClassName) // TODO: change to reflection later
     {
         GameExtensionPoint gameExtensionPoint = GameExtensionPoint.getInstance();
 
         try
         {
-            Object pluginInstance = Class.forName("edu.curtin.gameplugins.Prize")
-                    .getDeclaredConstructor(GameAPI.class)
+            Class<?> pluginClass = Class.forName(pluginClassName);
+            Object pluginInstance = pluginClass.getDeclaredConstructor(GameAPI.class)
                     .newInstance(GameExtensionPoint.getInstance());
 
-            gameExtensionPoint.registerMoveListener((MoveListener) pluginInstance);
-            gameExtensionPoint.registerCollectListener((CollectListener) pluginInstance);
+            // Check which interfaces the plugin implements
+            if (MoveListener.class.isAssignableFrom(pluginClass))
+            {
+                gameExtensionPoint.registerMoveListener((MoveListener) pluginInstance);
+            }
+
+            if (CollectListener.class.isAssignableFrom(pluginClass))
+            {
+                gameExtensionPoint.registerCollectListener((CollectListener) pluginInstance);
+            }
+
+            if (MenuListener.class.isAssignableFrom(pluginClass))
+            {
+                gameExtensionPoint.registerMenuListener((MenuListener) pluginInstance);
+            }
+            logger.info(() -> "Plugin loaded: " + pluginClass.getName());
 
         }
         catch (ClassNotFoundException e)
         {
-            logger.severe(() -> "Plugin class not found: " + e.getMessage());
+            logger.warning(() -> "Plugin class not found: " + e.getMessage());
         }
         catch (Exception e)
         {

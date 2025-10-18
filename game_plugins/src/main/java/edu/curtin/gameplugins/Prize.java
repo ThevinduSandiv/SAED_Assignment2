@@ -4,8 +4,12 @@ import edu.curtin.saed.gameapis.CollectListener;
 import edu.curtin.saed.gameapis.GameAPI;
 import edu.curtin.saed.gameapis.MoveListener;
 
+import java.util.logging.Logger;
+
 public class Prize implements CollectListener, MoveListener
 {
+    private static final Logger logger = Logger.getLogger(Prize.class.getName());
+
     private int numOfItems;
     private int numOfObstaclesTraversed;
     private boolean added;
@@ -17,10 +21,12 @@ public class Prize implements CollectListener, MoveListener
         this.numOfObstaclesTraversed = 0;
         this.added = false;
         this.api = api;
+        logger.info("Prize plugin loaded.");
     }
 
     private void checkCondition()
     {
+        logger.info(() -> "Checking condition: " + numOfItems + " items, " + numOfObstaclesTraversed + " obstacles traversed");
         if(numOfItems + numOfObstaclesTraversed >= 5 && !added)
         {
             api.addToInventory("Shiny Infinity Stone", "Restore humanity!", "$");
@@ -42,7 +48,7 @@ public class Prize implements CollectListener, MoveListener
     }
 
     @Override
-    public void onObstacleTraverse()
+    public void onObstacleTraverse(int row, int col)
     {
         numOfObstaclesTraversed++;
         checkCondition();

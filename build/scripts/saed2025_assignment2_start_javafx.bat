@@ -36,7 +36,7 @@ set APP_HOME=%DIRNAME%..
 for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
 
 @rem Add default JVM options here. You can also use JAVA_OPTS and SAED2025_ASSIGNMENT2_START_JAVAFX_OPTS to pass JVM options to this script.
-set DEFAULT_JVM_OPTS="-Djava.util.logging.config.file=C:\Users\thevi\Desktop\Software ArchitectureProjects\Assignment 2\2025_assignment2/src/main/resources/logging.properties"
+set DEFAULT_JVM_OPTS=
 
 @rem Find java.exe
 if defined JAVA_HOME goto findJavaFromJavaHome
@@ -70,7 +70,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\saed2025_assignment2_start_javafx.jar;%APP_HOME%\lib\jnativehook-2.1.0.jar
+set CLASSPATH=%APP_HOME%\lib\saed2025_assignment2_start_javafx.jar
 
 
 @rem Execute saed2025_assignment2_start_javafx

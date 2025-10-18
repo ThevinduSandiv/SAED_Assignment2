@@ -70,7 +70,7 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\core_game.jar;%APP_HOME%\lib\jnativehook-2.1.0.jar
+set CLASSPATH=%APP_HOME%\lib\core_game.jar;%APP_HOME%\lib\jnativehook-2.1.0.jar;%APP_HOME%\lib\game_plugins.jar;%APP_HOME%\lib\game_apis.jar
 
 
 @rem Execute core_game

@@ -113,7 +113,7 @@ public class Obstacle implements MapObject
             inventory.removeAll(removingItems); // Remove the used-items
             sim.addMsgToShow(UIManager.getUIText("obstacle_pass"));
             sim.addMsgToShow(UIManager.getUIText("items_used_to_obstacle", getRequiredAsString()));
-            GameExtensionPoint.getInstance().onObstacleTraverse();
+            GameExtensionPoint.getInstance().onObstacleTraverse(row, col);
             return true;
         }
         else

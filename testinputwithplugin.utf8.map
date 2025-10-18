@@ -1,0 +1,100 @@
+size (12,13)
+start (1,4)
+goal (7,10)
+item "superlative turquoise map" {
+  at (3,0)
+  message "p"
+}
+
+obstacle {
+  at (6,8), (7,2), (0,3), (11,12), (11,0), (10,9), (0,5), (9,3), (0,8)
+  requires "superlative turquoise map", "ornate pendant", "lustrous map", "charmed gem"
+}
+
+obstacle {
+  at (9,9), (9,5), (1,4), (1,3), (7,6)
+  requires "antique red case", "lustrous map"
+}
+
+item "glowing grey book" {
+  at (11,1)
+  message "qiTkG"
+}
+
+obstacle {
+  at (7,12), (3,9)
+  requires "ornate pendant"
+}
+
+plugin edu.curtin.gameplugins.Prize
+
+item "ornate grey pendant" {
+  at (8,12), (7,11), (7,1), (1,1)
+  message "iioMOe"
+}
+
+item "lustrous yellow flask" {
+  at (3,5), (7,10), (1,5), (5,12)
+  message "~jKgnqlAS"
+}
+
+obstacle {
+  at (6,10), (11,6), (1,2), (7,5), (9,10), (10,6)
+  requires "lustrous map", "ornate grey pendant", "worn crown"
+}
+
+
+obstacle {
+  at (0,0), (6,2), (5,3), (9,6), (0,1)
+  requires "ornate pendant"
+}
+
+item "ornate pendant" {
+  at (8,0), (11,3)
+  message "OEe~s"
+}
+
+plugin edu.curtin.gameplugins.Penalty
+
+obstacle {
+  at (6,1), (4,11)
+  requires "antique red case", "ornate pendant"
+}
+
+obstacle {
+  at (5,5), (5,7)
+  requires "superlative turquoise map"
+}
+
+item "lustrous map" {
+  at (7,9), (1,12), (11,7), (9,7)
+  message "dT*e"
+}
+
+
+item "worn crown" {
+  at (2,2), (4,4), (4,9), (4,0)
+  message "/1fBaTVD^m"
+}
+
+obstacle {
+  at (2,3), (2,0), (7,4), (4,10), (4,1)
+  requires "charmed gem", "ornate pendant", "worn crown", "superlative turquoise map"
+}
+
+item "antique red case" {
+  at (9,2), (8,3), (0,2), (5,10), (9,0)
+  message "j)wfyTAlW"
+}
+
+obstacle {
+  at (7,7), (3,3), (1,8), (11,4), (1,11), (2,8)
+  requires "ornate pendant"
+}
+
+item "charmed gem" {
+  at (2,9)
+  message "LDk#GuQ"
+}
+
+plugin edu.curtin.gameplugins.Reveal

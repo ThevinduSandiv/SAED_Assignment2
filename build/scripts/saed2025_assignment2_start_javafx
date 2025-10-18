@@ -114,7 +114,7 @@ case "$( uname )" in                #(
   NONSTOP* )        nonstop=true ;;
 esac
 
-CLASSPATH=$APP_HOME/lib/saed2025_assignment2_start_javafx.jar:$APP_HOME/lib/jnativehook-2.1.0.jar
+CLASSPATH=$APP_HOME/lib/saed2025_assignment2_start_javafx.jar
 
 
 # Determine the Java command to use to start the JVM.
@@ -202,7 +202,7 @@ fi
 
 
 # Add default JVM options here. You can also use JAVA_OPTS and SAED2025_ASSIGNMENT2_START_JAVAFX_OPTS to pass JVM options to this script.
-DEFAULT_JVM_OPTS='"-Djava.util.logging.config.file=C:\\Users\\thevi\\Desktop\\Software ArchitectureProjects\\Assignment 2\\2025_assignment2/src/main/resources/logging.properties"'
+DEFAULT_JVM_OPTS=""
 
 # Collect all arguments for the java command:
 #   * DEFAULT_JVM_OPTS, JAVA_OPTS, and optsEnvironmentVar are not allowed to contain shell fragments,

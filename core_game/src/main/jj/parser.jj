@@ -19,17 +19,19 @@ TOKEN: {
     | < SIZE: "size" >
     | < START: "start" >
     | < GOAL: "goal" >
+    | < PLUGIN: "plugin" >
     | < REQUIRES: "requires" >
     | < STRING: "\"" (~["\"", "\n", "\r"])* "\"" > // Any charcter except newlines surrounded by '"'
+    | < IDENTIFIER: (["a"-"z","A"-"Z","_"])(["a"-"z","A"-"Z","0"-"9","_","."])* >
     | < COORDINATE: "(" (["0"-"9"])+ "," (["0"-"9"])+ ")" >
 
 }
 
-void run(Simulation sim) :
+void run(Simulation sim, Loader loader) :
 {}
 {
     readMapSize(sim) // Do this first
-    ( readPlayer(sim) | readGoal(sim) | readObstacles(sim) | readCollectables(sim) )*
+    ( readPlayer(sim) | readGoal(sim) | readObstacles(sim) | readCollectables(sim) | readPlugin(loader) )*
 }
 
 void readMapSize(Simulation sim) :
@@ -193,4 +195,15 @@ void readCollectables(Simulation sim) :
         sim.addCollectables(createdCollectables);
         }
     )+
+}
+
+
+void readPlugin(Loader loader) :
+{}
+{
+    <PLUGIN>
+    <IDENTIFIER>
+    {
+        loader.loadPlugin(token.image);
+    }
 }

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class MyParser implements MyParserConstants {
 
-  static final public void run(Simulation sim) throws ParseException {
+  static final public void run(Simulation sim, Loader loader) throws ParseException {
     readMapSize(sim);
     label_1:
     while (true) {
@@ -15,6 +15,7 @@ public class MyParser implements MyParserConstants {
       case COLLECTABLE:
       case START:
       case GOAL:
+      case PLUGIN:
         ;
         break;
       default:
@@ -33,6 +34,9 @@ public class MyParser implements MyParserConstants {
         break;
       case COLLECTABLE:
         readCollectables(sim);
+        break;
+      case PLUGIN:
+        readPlugin(loader);
         break;
       default:
         jj_la1[1] = jj_gen;
@@ -84,7 +88,7 @@ public class MyParser implements MyParserConstants {
     label_2:
     while (true) {
       jj_consume_token(OBSTACLE);
-      jj_consume_token(15);
+      jj_consume_token(17);
             // New Lists to store the coordinates and requirements
             List<int[]> coordinates = new ArrayList<int[]>();
             List<String> requirements = new ArrayList<String>();
@@ -96,14 +100,14 @@ public class MyParser implements MyParserConstants {
       label_3:
       while (true) {
         switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
-        case 16:
+        case 18:
           ;
           break;
         default:
           jj_la1[2] = jj_gen;
           break label_3;
         }
-        jj_consume_token(16);
+        jj_consume_token(18);
         jj_consume_token(COORDINATE);
                 // Parse additional coordinates and add to the list
                 String[] xy2 = token.image.replaceAll("[()]", "").split(",");
@@ -117,20 +121,20 @@ public class MyParser implements MyParserConstants {
       label_4:
       while (true) {
         switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
-        case 16:
+        case 18:
           ;
           break;
         default:
           jj_la1[3] = jj_gen;
           break label_4;
         }
-        jj_consume_token(16);
+        jj_consume_token(18);
         jj_consume_token(STRING);
                         // Add additional requirement strings (remove quotes)
                         String req2 = token.image.replaceAll("\u005c"", "");
                         requirements.add(req2);
       }
-      jj_consume_token(17);
+      jj_consume_token(19);
          // Create Obstacle objects
          List<Obstacle> createdObstacles = new ArrayList<Obstacle>();
         for(int[] coord : coordinates)
@@ -164,7 +168,7 @@ public class MyParser implements MyParserConstants {
       jj_consume_token(STRING);
             // Get the item name (remove quotes)
             String itemName = token.image.replaceAll("\u005c"", "");
-      jj_consume_token(15);
+      jj_consume_token(17);
             // New Lists to store the coordinates and message
             List<int[]> coordinates = new ArrayList<int[]>();
             String message = "";
@@ -176,14 +180,14 @@ public class MyParser implements MyParserConstants {
       label_6:
       while (true) {
         switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
-        case 16:
+        case 18:
           ;
           break;
         default:
           jj_la1[5] = jj_gen;
           break label_6;
         }
-        jj_consume_token(16);
+        jj_consume_token(18);
         jj_consume_token(COORDINATE);
                 // Parse additional coordinates and add to the list
                 String[] xy2 = token.image.replaceAll("[()]", "").split(",");
@@ -193,7 +197,7 @@ public class MyParser implements MyParserConstants {
       jj_consume_token(STRING);
             // Get the message string (remove quotes)
             message = token.image.replaceAll("\u005c"", "");
-      jj_consume_token(17);
+      jj_consume_token(19);
          // Create Collectable objects
          List<Collectable> createdCollectables = new ArrayList<Collectable>();
         for(int[] coord : coordinates)
@@ -214,6 +218,12 @@ public class MyParser implements MyParserConstants {
     }
   }
 
+  static final public void readPlugin(Loader loader) throws ParseException {
+    jj_consume_token(PLUGIN);
+    jj_consume_token(IDENTIFIER);
+        loader.loadPlugin(token.image);
+  }
+
   static private boolean jj_initialized_once = false;
   /** Generated Token Manager. */
   static public MyParserTokenManager token_source;
@@ -230,7 +240,7 @@ public class MyParser implements MyParserConstants {
       jj_la1_init_0();
    }
    private static void jj_la1_init_0() {
-      jj_la1_0 = new int[] {0xc60,0xc60,0x10000,0x10000,0x20,0x10000,0x40,};
+      jj_la1_0 = new int[] {0x1c60,0x1c60,0x40000,0x40000,0x20,0x40000,0x40,};
    }
 
   /** Constructor with InputStream. */
@@ -368,7 +378,7 @@ public class MyParser implements MyParserConstants {
   /** Generate ParseException. */
   static public ParseException generateParseException() {
     jj_expentries.clear();
-    boolean[] la1tokens = new boolean[18];
+    boolean[] la1tokens = new boolean[20];
     if (jj_kind >= 0) {
       la1tokens[jj_kind] = true;
       jj_kind = -1;
@@ -382,7 +392,7 @@ public class MyParser implements MyParserConstants {
         }
       }
     }
-    for (int i = 0; i < 18; i++) {
+    for (int i = 0; i < 20; i++) {
       if (la1tokens[i]) {
         jj_expentry = new int[1];
         jj_expentry[0] = i;

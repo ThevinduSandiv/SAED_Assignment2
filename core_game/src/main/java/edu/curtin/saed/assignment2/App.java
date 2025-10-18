@@ -51,9 +51,6 @@ public class App implements NativeKeyListener
 
         GameExtensionPoint.getInstance().setSim(sim);
 
-        Loader loader = new Loader();
-        loader.loadPlugin();
-
         redrawMap();
         while(isRunning)
         {} // TODO: For now keeps the main app running
@@ -62,10 +59,11 @@ public class App implements NativeKeyListener
     private static void readFile(Simulation sim, InputStream in)
     {
         MyParser parser = new MyParser(in);
+        Loader loader = new Loader();
 
         try
         {
-            parser.run(sim);
+            parser.run(sim, loader);
             logger.info("Input valid");
         }
         catch(edu.curtin.saed.assignment2.ParseException e)
@@ -98,25 +96,26 @@ public class App implements NativeKeyListener
 
     private static void changeLocale()
     {
-        try
-        {
-            while (System.in.available() > 0) {
-                System.in.read();
-            }
-            logger.info("Clearing buffer");
-        }
-        catch (IOException e)
-        {
-            logger.info(() -> "Error clearing buffer: " + e.getMessage());
-            // Ignore - buffer might already be clear
-        }
-
         logger.info("Reading new locale");
         System.out.println(UIManager.getUIText("locale_change_msg"));
         Scanner input = new Scanner(System.in);
         String inputText = input.nextLine();
         String localeString = inputText.substring(1); // Removes "t" from the beginning
-        input.close();
+        // input.close(); TODO: Add justification here
+
+        /*
+        No, this issue is not specifically because of JNativeHook. The problem is with closing System.in when running under Gradle, regardless of what other libraries you're using.
+
+The real cause:
+Gradle creates an input pipe to your Java process for System.in
+
+When you call input.close() on a Scanner that wraps System.in, it closes the underlying stream
+
+This breaks Gradle's pipe - hence the "The pipe is being closed" error
+
+Gradle can no longer communicate with your process
+         */
+
         UIManager.setLocale(localeString);
         redrawMap();
         resumeNativeHook();

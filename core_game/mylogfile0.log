@@ -1,98 +1,552 @@
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.UIManager setLocale
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.UIManager setLocale
 INFO: Setting locale to en-AU
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.App setupKeyListener
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.App setupKeyListener
 INFO: Native hook registered successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.App main
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.App main
 INFO: Starting Simulation
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation createMap
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation createMap
 INFO: Map created successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addPlayer
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addPlayer
 INFO: Player added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addGoal
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addGoal
 INFO: Goal added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addObstacles
-INFO: Obstacles added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addObstacles
-INFO: Obstacles added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addObstacles
-INFO: Obstacles added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addObstacles
-INFO: Obstacles added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addObstacles
-INFO: Obstacles added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addCollectables
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addCollectables
 INFO: Collectables added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addCollectables
-INFO: Collectables added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addCollectables
-INFO: Collectables added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation addCollectables
-INFO: Collectables added successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.App readFile
-INFO: Input valid
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.GameExtensionPoint registerCollectListener
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.gameplugins.Prize <init>
+INFO: Prize plugin loaded.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.GameExtensionPoint registerCollectListener
 INFO: Registering Collect Listener
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Loader loadPlugin
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Loader loadPlugin
+INFO: Plugin loaded: edu.curtin.gameplugins.Prize
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addCollectables
+INFO: Collectables added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addCollectables
+INFO: Collectables added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addCollectables
+INFO: Collectables added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.gameplugins.Penalty <init>
+INFO: Penalty Plugin Loaded
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Loader loadPlugin
+INFO: Plugin loaded: edu.curtin.gameplugins.Penalty
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addCollectables
+INFO: Collectables added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addCollectables
+INFO: Collectables added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addCollectables
+INFO: Collectables added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation addCollectables
+INFO: Collectables added successfully.
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.GameExtensionPoint registerCollectListener
+INFO: Registering Collect Listener
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Loader loadPlugin
 INFO: Plugin loaded: edu.curtin.gameplugins.Reveal
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.App readFile
+INFO: Input valid
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
 INFO: Messages to show generated successfully.
-Oct 17, 2025 11:16:24 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+Oct 18, 2025 11:22:05 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
 INFO: Drawable map generated successfully.
-Oct 17, 2025 11:16:27 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+Oct 18, 2025 11:22:19 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 18, 2025 11:22:19 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:2, col:5
+Oct 18, 2025 11:22:19 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:1, col:5
+Oct 18, 2025 11:22:19 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 13264 ms
+Oct 18, 2025 11:22:19 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Penalty Timed Out
+Oct 18, 2025 11:22:19 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:-1 ,col:0
+Oct 18, 2025 11:22:19 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:0 ,col:4
+Oct 18, 2025 11:22:19 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:19 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:37 AM edu.curtin.saed.assignment2.App nativeKeyPressed
 INFO: Player moved down - clicked
-Oct 17, 2025 11:16:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
-INFO: Player Pos: at row:1, col:1
-Oct 17, 2025 11:16:27 PM edu.curtin.saed.assignment2.Simulation movePlayer
-INFO: Target Pos: at row:2, col:1
-Oct 17, 2025 11:16:27 PM edu.curtin.saed.assignment2.Player move
+Oct 18, 2025 11:22:37 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:1, col:5
+Oct 18, 2025 11:22:37 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:2, col:5
+Oct 18, 2025 11:22:37 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 17928 ms
+Oct 18, 2025 11:22:37 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Penalty Timed Out
+Oct 18, 2025 11:22:37 AM edu.curtin.saed.assignment2.Player move
 INFO: Player moves the step -> row:1 ,col:0
-Oct 17, 2025 11:16:27 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+Oct 18, 2025 11:22:37 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:1 ,col:4
+Oct 18, 2025 11:22:37 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
 INFO: Messages to show generated successfully.
-Oct 17, 2025 11:16:27 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+Oct 18, 2025 11:22:37 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
 INFO: Drawable map generated successfully.
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+Oct 18, 2025 11:22:38 AM edu.curtin.saed.assignment2.App nativeKeyPressed
 INFO: Player moved down - clicked
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
-INFO: Player Pos: at row:2, col:1
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
-INFO: Target Pos: at row:3, col:1
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.Player move
+Oct 18, 2025 11:22:38 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:2, col:5
+Oct 18, 2025 11:22:38 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:3, col:5
+Oct 18, 2025 11:22:38 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 1648 ms
+Oct 18, 2025 11:22:38 AM edu.curtin.saed.assignment2.Player move
 INFO: Player moves the step -> row:1 ,col:0
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+Oct 18, 2025 11:22:38 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:2 ,col:4
+Oct 18, 2025 11:22:38 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
 INFO: Messages to show generated successfully.
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+Oct 18, 2025 11:22:38 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
 INFO: Drawable map generated successfully.
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.App nativeKeyPressed
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.App nativeKeyPressed
 INFO: Player moved down - clicked
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
-INFO: Player Pos: at row:3, col:1
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.Simulation movePlayer
-INFO: Target Pos: at row:4, col:1
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.Player move
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:3, col:5
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:4, col:5
+Oct 18, 2025 11:22:39 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 383 ms
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.Player move
 INFO: Player moves the step -> row:1 ,col:0
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:3 ,col:4
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
 INFO: Messages to show generated successfully.
-Oct 17, 2025 11:16:28 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
 INFO: Drawable map generated successfully.
-Oct 17, 2025 11:16:29 PM edu.curtin.saed.assignment2.App nativeKeyPressed
-INFO: Player moved down - clicked
-Oct 17, 2025 11:16:29 PM edu.curtin.saed.assignment2.Simulation movePlayer
-INFO: Player Pos: at row:4, col:1
-Oct 17, 2025 11:16:29 PM edu.curtin.saed.assignment2.Simulation movePlayer
-INFO: Target Pos: at row:5, col:1
-Oct 17, 2025 11:16:29 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:4, col:5
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:4, col:4
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.Simulation addMsgToShow
 INFO: Message added successfully.
-Oct 17, 2025 11:16:29 PM edu.curtin.saed.assignment2.Simulation addMsgToShow
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:39 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:4, col:5
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:4, col:6
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation addMsgToShow
 INFO: Message added successfully.
-Oct 17, 2025 11:16:29 PM edu.curtin.saed.assignment2.GameExtensionPoint onCollect
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.GameExtensionPoint onCollect
 INFO: Calling OnCollect Method
-Oct 17, 2025 11:16:29 PM edu.curtin.saed.assignment2.GameExtensionPoint onCollect
+Oct 18, 2025 11:22:40 AM edu.curtin.gameplugins.Prize checkCondition
+INFO: Checking condition: 1 items, 0 obstacles traversed
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.GameExtensionPoint onCollect
 INFO: Calling the listener
-Oct 17, 2025 11:16:29 PM edu.curtin.saed.assignment2.Player move
-INFO: Player moves the step -> row:1 ,col:0
-Oct 17, 2025 11:16:29 PM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.GameExtensionPoint onCollect
+INFO: Calling the listener
+Oct 18, 2025 11:22:40 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 1198 ms
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:0 ,col:1
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:3 ,col:5
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
 INFO: Messages to show generated successfully.
-Oct 17, 2025 11:16:29 PM edu.curtin.saed.assignment2.Simulation getDrawableMap
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:4, col:6
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:3, col:6
+Oct 18, 2025 11:22:40 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 8 ms
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:-1 ,col:0
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:2 ,col:5
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:3, col:6
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:3, col:7
+Oct 18, 2025 11:22:40 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 240 ms
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:0 ,col:1
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:2 ,col:6
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:3, col:7
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:2, col:7
+Oct 18, 2025 11:22:40 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 95 ms
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:-1 ,col:0
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:1 ,col:6
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:2, col:7
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:2, col:8
+Oct 18, 2025 11:22:40 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 105 ms
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:0 ,col:1
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:1 ,col:7
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:40 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:2, col:8
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:2, col:9
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:2, col:8
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:3, col:8
+Oct 18, 2025 11:22:41 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 512 ms
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:1 ,col:0
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:2 ,col:7
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:3, col:8
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:4, col:8
+Oct 18, 2025 11:22:41 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 287 ms
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:1 ,col:0
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:3 ,col:7
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:4, col:8
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:5, col:8
+Oct 18, 2025 11:22:41 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 175 ms
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:1 ,col:0
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:4 ,col:7
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:41 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:5, col:8
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:5, col:7
+Oct 18, 2025 11:22:42 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 495 ms
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:0 ,col:-1
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:4 ,col:6
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:5, col:7
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:4, col:7
+Oct 18, 2025 11:22:42 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 272 ms
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:-1 ,col:0
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:3 ,col:6
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:42 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:22:56 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 18, 2025 11:22:56 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:4, col:7
+Oct 18, 2025 11:22:56 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:5, col:7
+Oct 18, 2025 11:22:56 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 14054 ms
+Oct 18, 2025 11:22:56 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Penalty Timed Out
+Oct 18, 2025 11:22:56 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Adding a penalty at: 3, 5
+Oct 18, 2025 11:22:56 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:22:56 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Penalty adding done (if valid)
+Oct 18, 2025 11:22:56 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:1 ,col:0
+Oct 18, 2025 11:22:56 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:4 ,col:6
+Oct 18, 2025 11:22:56 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:22:56 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:23:11 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 18, 2025 11:23:11 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:5, col:7
+Oct 18, 2025 11:23:11 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:6, col:7
+Oct 18, 2025 11:23:11 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 14482 ms
+Oct 18, 2025 11:23:11 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Penalty Timed Out
+Oct 18, 2025 11:23:11 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Adding a penalty at: 4, 5
+Oct 18, 2025 11:23:11 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:23:11 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Penalty adding done (if valid)
+Oct 18, 2025 11:23:11 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:1 ,col:0
+Oct 18, 2025 11:23:11 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:5 ,col:6
+Oct 18, 2025 11:23:11 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:23:11 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:6, col:7
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:7, col:7
+Oct 18, 2025 11:23:12 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 1292 ms
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:1 ,col:0
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:6 ,col:6
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:7, col:7
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:8, col:7
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.Simulation addMsgToShow
+INFO: Message added successfully.
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:23:12 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:7, col:7
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:6, col:7
+Oct 18, 2025 11:23:13 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 876 ms
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:-1 ,col:0
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:5 ,col:6
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:6, col:7
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:5, col:7
+Oct 18, 2025 11:23:13 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 207 ms
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:-1 ,col:0
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:4 ,col:6
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:5, col:7
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:4, col:7
+Oct 18, 2025 11:23:13 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 533 ms
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:-1 ,col:0
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:3 ,col:6
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:23:13 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:23:14 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved down - clicked
+Oct 18, 2025 11:23:14 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:4, col:7
+Oct 18, 2025 11:23:14 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:5, col:7
+Oct 18, 2025 11:23:14 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 561 ms
+Oct 18, 2025 11:23:14 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:1 ,col:0
+Oct 18, 2025 11:23:14 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:4 ,col:6
+Oct 18, 2025 11:23:14 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:23:14 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:23:15 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 18, 2025 11:23:15 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:5, col:7
+Oct 18, 2025 11:23:15 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:5, col:8
+Oct 18, 2025 11:23:15 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 579 ms
+Oct 18, 2025 11:23:15 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:0 ,col:1
+Oct 18, 2025 11:23:15 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:4 ,col:7
+Oct 18, 2025 11:23:15 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:23:15 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:23:18 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved up - clicked
+Oct 18, 2025 11:23:18 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:5, col:8
+Oct 18, 2025 11:23:18 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:4, col:8
+Oct 18, 2025 11:23:18 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 3910 ms
+Oct 18, 2025 11:23:18 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:-1 ,col:0
+Oct 18, 2025 11:23:18 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:3 ,col:7
+Oct 18, 2025 11:23:18 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:23:18 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:23:34 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved right - clicked
+Oct 18, 2025 11:23:34 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:4, col:8
+Oct 18, 2025 11:23:34 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:4, col:9
+Oct 18, 2025 11:23:34 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 15720 ms
+Oct 18, 2025 11:23:34 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Penalty Timed Out
+Oct 18, 2025 11:23:34 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Adding a penalty at: 3, 6
+Oct 18, 2025 11:23:34 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:23:34 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Penalty adding done (if valid)
+Oct 18, 2025 11:23:34 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:0 ,col:1
+Oct 18, 2025 11:23:34 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:3 ,col:8
+Oct 18, 2025 11:23:34 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:23:34 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
+INFO: Drawable map generated successfully.
+Oct 18, 2025 11:25:11 AM edu.curtin.saed.assignment2.App nativeKeyPressed
+INFO: Player moved left - clicked
+Oct 18, 2025 11:25:11 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Player Pos: at row:4, col:9
+Oct 18, 2025 11:25:11 AM edu.curtin.saed.assignment2.Simulation movePlayer
+INFO: Target Pos: at row:4, col:8
+Oct 18, 2025 11:25:11 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Passed time between moves: 96634 ms
+Oct 18, 2025 11:25:11 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Penalty Timed Out
+Oct 18, 2025 11:25:11 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Adding a penalty at: 3, 7
+Oct 18, 2025 11:25:11 AM edu.curtin.saed.assignment2.Simulation addObstacles
+INFO: Obstacles added successfully.
+Oct 18, 2025 11:25:11 AM edu.curtin.gameplugins.Penalty checkPenalty
+INFO: Penalty adding done (if valid)
+Oct 18, 2025 11:25:11 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves the step -> row:0 ,col:-1
+Oct 18, 2025 11:25:11 AM edu.curtin.saed.assignment2.Player move
+INFO: Player moves to -> row:3 ,col:7
+Oct 18, 2025 11:25:11 AM edu.curtin.saed.assignment2.Simulation getMessagesToShow
+INFO: Messages to show generated successfully.
+Oct 18, 2025 11:25:11 AM edu.curtin.saed.assignment2.Simulation getDrawableMap
 INFO: Drawable map generated successfully.

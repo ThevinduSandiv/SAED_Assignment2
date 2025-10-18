@@ -40,6 +40,7 @@ public class Player implements MapObject
         row += stepRow;
         col += stepCol;
         logger.info(String.format("Player moves the step -> row:%d ,col:%d", stepRow, stepCol));
+        logger.info(String.format("Player moves to -> row:%d ,col:%d", row, col));
     }
 
     public List<Collectable> getInventory()

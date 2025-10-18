@@ -76,11 +76,11 @@ public class GameExtensionPoint implements PluginRegister, GameAPI
         }
     }
 
-    public void onObstacleTraverse()
+    public void onObstacleTraverse(int row, int col)
     {
         for(MoveListener l : moveListeners)
         {
-            l.onObstacleTraverse();
+            l.onObstacleTraverse(row, col);
         }
     }
 
